@@ -1,0 +1,1 @@
+1. Toca cambiar la primary key de Empleado, para que sea la cedula
