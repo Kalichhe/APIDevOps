@@ -9,22 +9,18 @@ class EmpleadoBase(BaseModel):
     rol: str
 
 
-# Crear un empleado, que hereda de la clase EmpleadoBase
 class EmpleadoCreate(EmpleadoBase):
     pass
 
 
-# Busca a un empleado
 class EmpleadoRead(EmpleadoBase):
     id: int
 
-    # Permite que FastAPI transforme el dato de entrada id que viene en str a int
     class Config:
         from_attributes = True
 
 
-# Actualiza a un empleado, pero los datos que se requieran, no todos son obligatorios
-class EmpleadoUpdate(EmpleadoBase):
+class EmpleadoUpdate(BaseModel):
     cedula: Optional[str] = None
     nombre: Optional[str] = None
     rol: Optional[str] = None
