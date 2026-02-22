@@ -1,4 +1,4 @@
 from app.db.session import Base
 
-# Aquí irás importando tus modelos conforme los crees
-# from app.models.empleado import Empleado
+
+from app.models.registro_labor import RegistroLabor
