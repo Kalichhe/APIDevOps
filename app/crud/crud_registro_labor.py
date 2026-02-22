@@ -4,7 +4,7 @@ from app.schemas.registro_labor import RegistroLaborCreate, RegistroLaborUpdate
 
 
 # Funcion para crear a una registro_labor
-def create_labor(db: Session, registro_labor: RegistroLaborCreate):
+def create_registro_labor(db: Session, registro_labor: RegistroLaborCreate):
     db_registro_labor = RegistroLabor(**registro_labor.model_dump())
     db.add(db_registro_labor)
     db.commit()
