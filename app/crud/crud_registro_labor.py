@@ -18,17 +18,17 @@ def get_registro_labores(db: Session):
 
 
 # Funcion para buscar una registro_labor
-def get_registro_labor(db: Session, codigo_registro_labor: str):
-    return db.query(RegistroLabor).filter(RegistroLabor.codigocodigo_registro_labor ==codigo_registro_labor).first()
+def get_registro_labor(db: Session,  registro_labor_id: str):
+    return db.query(RegistroLabor).filter(RegistroLabor.id == registro_labor_id).first()
 
 
 # Funcion para actualizar una registro_labor usando Patch
-def update_registro_labor(db: Session,codigo_registro_labor: str, registro_labor: RegistroLaborUpdate):
-    db_registro_labor = db.query(RegistroLabor).filter(RegistroLabor.codigo_registro_labor ==codigo_registro_labor).first()
+def update_registro_labor(db: Session, registro_labor_id: str, registro_labor: RegistroLaborUpdate):
+    db_registro_labor = db.query(RegistroLabor).filter(RegistroLabor.id == registro_labor_id).first()
     if db_registro_labor is None:
         return None
     # Solo actualiza los campos que vienen con valor
-    for campo, valor in registro_labor.model_dump(exclude_unset=True).items():
+    for campo, valor in registro_labor.model_dump(exclude_unset = True).items():
         setattr(db_registro_labor, campo, valor)
     db.commit()
     db.refresh(db_registro_labor)
@@ -36,8 +36,8 @@ def update_registro_labor(db: Session,codigo_registro_labor: str, registro_labor
 
 
 # Funcion para eliminar una registro_labor
-def delete_registro_labor(db: Session,codigo_registro_labor: str):
-    db_registro_labor = db.query(RegistroLabor).filter(RegistroLabor.codigo_registro_labor ==codigo_registro_labor).first()
+def delete_registro_labor(db: Session, registro_labor_id: str):
+    db_registro_labor = db.query(RegistroLabor).filter(RegistroLabor.id == registro_labor_id).first()
     if db_registro_labor is None:
         return None
     db.delete(db_registro_labor)

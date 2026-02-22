@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from app.api.v1.endpoints import registro_labores
-from app.api.v1.endpoints import empleados, labores
+from app.api.v1.endpoints import empleados, labores, registro_labores
 
 api_router = APIRouter()
 
