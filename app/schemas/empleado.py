@@ -14,13 +14,12 @@ class EmpleadoCreate(EmpleadoBase):
 
 
 class EmpleadoRead(EmpleadoBase):
-    id: int
+    cedula: int
 
     class Config:
         from_attributes = True
 
 
 class EmpleadoUpdate(BaseModel):
-    cedula: Optional[str] = None
     nombre: Optional[str] = None
     rol: Optional[str] = None
