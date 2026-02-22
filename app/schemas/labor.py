@@ -28,5 +28,5 @@ class LaborRead(LaborBase):
 class LaborUpdate(LaborBase):
     nombre: Optional[str] = None
     unidad_medida: Optional[str] = None
-    precio: Optional[str] = None
+    precio: Optional[float] = None
     observacion: Optional[str] = None
