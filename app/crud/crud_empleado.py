@@ -18,13 +18,13 @@ def get_empleados(db: Session):
 
 
 # Funcion para buscar a un empleado
-def get_empleado(db: Session, empleado_id: int):
-    return db.query(Empleado).filter(Empleado.id == empleado_id).first()
+def get_empleado(db: Session, empleado_cedula: int):
+    return db.query(Empleado).filter(Empleado.cedula == empleado_cedula).first()
 
 
 # Funcion para actualizar a un empleado usando Patch
-def update_empleado(db: Session, empleado_id: int, empleado: EmpleadoUpdate):
-    db_empleado = db.query(Empleado).filter(Empleado.id == empleado_id).first()
+def update_empleado(db: Session, empleado_cedula: int, empleado: EmpleadoUpdate):
+    db_empleado = db.query(Empleado).filter(Empleado.cedula == empleado_cedula).first()
     if db_empleado is None:
         return None
     # Solo actualiza los campos que vienen con valor
@@ -36,8 +36,8 @@ def update_empleado(db: Session, empleado_id: int, empleado: EmpleadoUpdate):
 
 
 # Funcion para eliminar a un empleado
-def delete_empleado(db: Session, empleado_id: int):
-    db_empleado = db.query(Empleado).filter(Empleado.id == empleado_id).first()
+def delete_empleado(db: Session, empleado_cedula: int):
+    db_empleado = db.query(Empleado).filter(Empleado.cedula == empleado_cedula).first()
     if db_empleado is None:
         return None
     db.delete(db_empleado)
