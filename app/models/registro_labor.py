@@ -7,7 +7,7 @@ class RegistroLabor(Base):
     __tablename__ = "registro_labores"
 
     id = Column(Integer, primary_key=True, index=True)
-    empleado_id = Column(Integer, ForeignKey("empleados.id"), nullable=False)
+    empleado_id = Column(Integer, ForeignKey("empleados.cedula"), nullable=False)
     codigo_labor = Column(String, ForeignKey("labores.codigo_labor"), nullable=False)
     fecha = Column(Date, nullable=False)
     cantidad = Column(Float, nullable=False)
