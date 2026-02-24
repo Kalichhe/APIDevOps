@@ -18,8 +18,11 @@ def get_registro_labores(db: Session):
 
 
 # Funcion para buscar una registro_labor
-def get_registro_labor(db: Session,  registro_labor_id: str):
-    return db.query(RegistroLabor).filter(RegistroLabor.id == registro_labor_id).first()
+def get_registros_by_empleado(db: Session, cedula: int):
+    # Usamos .all() porque esperamos una lista de registros, no solo uno
+    return db.query(RegistroLabor).filter(
+        RegistroLabor.empleado_cedula == cedula
+    ).all()
 
 
 # Funcion para actualizar una registro_labor usando Patch

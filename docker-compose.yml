@@ -1,4 +1,18 @@
 services:
+  app:
+    build: .
+    container_name: apidevops_app
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=development
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=apidevops_dev
+      - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db_dev:5432/apidevops_dev
+    depends_on:
+      - db_dev
+
   db_dev:
     image: postgres:17
     container_name: postgres_dev
