@@ -1,6 +1,11 @@
 from pydantic_settings import BaseSettings
 import os
 
+ENV = os.getenv('ENV', 'development')
+
+print(f"Cargando ambiente: {ENV}")
+print(f"Archivo env: .env.{ENV}")
+
 class Settings(BaseSettings):
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str

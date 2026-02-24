@@ -1,3 +1,4 @@
 #!/bin/bash
-ENV=test uvicorn app.main:app --reload
-
+docker compose up db_test -d
+export ENV=test
+fastapi dev app/main.py
