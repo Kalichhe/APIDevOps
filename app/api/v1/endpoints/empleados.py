@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 from app.core.dependencies import get_db
 from app.schemas.empleado import EmpleadoCreate, EmpleadoRead, EmpleadoUpdate
 from app.crud import crud_empleado
+from app.models.registro_labor import RegistroLabor
 
 router = APIRouter()
 
@@ -16,7 +17,7 @@ def crear_empleado(empleado: EmpleadoCreate, db: Session = Depends(get_db)):
     # 2. Si existe, lanzamos una excepción 400 (Bad Request) o 409 (Conflict)
     if db_empleado:
         raise HTTPException(
-            status_code=400,
+            status_code=409,
             detail=f"Ya existe un empleado con la cédula {empleado.cedula}",
         )
 
@@ -68,6 +69,15 @@ def eliminar_empleado(empleado_cedula: int, db: Session = Depends(get_db)):
             status_code=404, detail="No se puede eliminar: Empleado no encontrado."
         )
 
+    # Verificamos si tiene registros de labor asociados
+    tiene_registros = db.query(RegistroLabor).filter(
+        RegistroLabor.empleado_cedula == empleado_cedula
+    ).first()
+    if tiene_registros:
+        raise HTTPException(
+            status_code=409,
+            detail="No se puede eliminar: el empleado tiene registros de labor asociados."
+        )
+
     crud_empleado.delete_empleado(db, empleado_cedula)
-    # El status 204 no devuelve cuerpo (está vacío), lo cual es correcto para DELETE
     return Response(status_code=204)

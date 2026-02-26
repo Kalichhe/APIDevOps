@@ -33,10 +33,9 @@ def crear_registro_labor(
     return crud_registro_labor.create_registro_labor(db, registro_labor)
 
 
-# Funcion para buscar registro labores
 @router.get("/", response_model=list[RegistroLaborRead])
 def listar_registro_labor(db: Session = Depends(get_db)):
-    return crud_registro_labor.get_registro_labores(db)
+    return crud_registro_labor.get_all_registros_labor(db)
 
 
 # Funcion para buscar un registro labor
@@ -54,36 +53,49 @@ def obtener_registros_por_empleado(empleado_cedula: int, db: Session = Depends(g
     return registros
 
 
-# Funcion para poder modificar una registro labor usando Patch
-# @router.patch("/{codigo_registro_labor}", response_model=RegistroLaborRead)
-# def actualizar_registro_labor(
-#     codigo_registro_labor: str,
-#     registro_labor: RegistroLaborUpdate,
-#     db: Session = Depends(get_db),
-# ):
-#     # Verificar existencia del registro principal
-#     db_registro = crud_registro_labor.get_registro_labor(db, codigo_registro_labor)
-#     if not db_registro:
-#         raise HTTPException(
-#             status_code=404, detail="Registro no encontrado para actualizar."
-#         )
+# Función para modificar un registro labor usando PATCH
+@router.patch("/{registro_id}", response_model=RegistroLaborRead)
+def actualizar_registro_labor(
+    registro_id: int,
+    registro_labor: RegistroLaborUpdate,
+    db: Session = Depends(get_db),
+):
+    # Verificar que el registro existe
+    db_registro = crud_registro_labor.get_registro_labor(db, registro_id)
+    if not db_registro:
+        raise HTTPException(
+            status_code=404, detail="Registro no encontrado para actualizar."
+        )
 
-#     # Opcional: Si el PATCH permite cambiar la cédula o labor, deberías validar que existan también.
+    # Si se está cambiando el empleado, verificar que existe
+    if registro_labor.empleado_cedula is not None:
+        db_empleado = crud_empleado.get_empleado(db, registro_labor.empleado_cedula)
+        if not db_empleado:
+            raise HTTPException(
+                status_code=404,
+                detail="No se puede actualizar: Empleado no encontrado.",
+            )
 
-#     return crud_registro_labor.update_registro_labor(
-#         db, codigo_registro_labor, registro_labor
-#     )
-# Pensar despues en como implementar eso
+    # Si se está cambiando la labor, verificar que existe
+    if registro_labor.codigo_labor is not None:
+        db_labor = crud_labor.get_labor(db, registro_labor.codigo_labor)
+        if not db_labor:
+            raise HTTPException(
+                status_code=404, detail="No se puede actualizar: Labor no encontrada."
+            )
 
-# Funcion para poder eliminar un registro labor
-# @router.delete("/{codigo_registro_labor}", status_code=204)
-# def eliminar_registro_labor(codigo_registro_labor: str, db: Session = Depends(get_db)):
-#     db_registro = crud_registro_labor.get_registro_labor(db, codigo_registro_labor)
-#     if not db_registro:
-#         raise HTTPException(
-#             status_code=404, detail="No se puede eliminar: Registro no encontrado."
-#         )
+    return crud_registro_labor.update_registro_labor(db, registro_id, registro_labor)
 
-#     crud_registro_labor.delete_registro_labor(db, codigo_registro_labor)
-#     return Response(status_code=204)
-# Pensar despues en como implementar eso
+
+# Función para eliminar un registro labor
+@router.delete("/{registro_id}", status_code=204)
+def eliminar_registro_labor(registro_id: int, db: Session = Depends(get_db)):
+    # Verificar que el registro existe antes de eliminar
+    db_registro = crud_registro_labor.get_registro_labor(db, registro_id)
+    if not db_registro:
+        raise HTTPException(
+            status_code=404, detail="No se puede eliminar: Registro no encontrado."
+        )
+
+    crud_registro_labor.delete_registro_labor(db, registro_id)
+    return Response(status_code=204)

@@ -4,6 +4,7 @@ from datetime import date
 
 
 class RegistroLaborBase(BaseModel):
+    id: int
     empleado_cedula: int
     codigo_labor: str
     fecha: date
@@ -22,7 +23,8 @@ class RegistroLaborRead(RegistroLaborBase):
         from_attributes = True
 
 
-class RegistroLaborUpdate(RegistroLaborBase):
+class RegistroLaborUpdate(BaseModel):
+    empleado_cedula: Optional[int] = None
     codigo_labor: Optional[str] = None
     fecha: Optional[date] = None
     cantidad: Optional[float] = None

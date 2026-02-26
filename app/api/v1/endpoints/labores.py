@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 from app.core.dependencies import get_db
 from app.schemas.labor import LaborCreate, LaborRead, LaborUpdate
 from app.crud import crud_labor
+from app.models.registro_labor import RegistroLabor
 
 router = APIRouter()
 
@@ -52,7 +53,6 @@ def actualizar_labor(
     return crud_labor.update_labor(db, codigo_labor, labor)
 
 
-# Funcion para poder eliminar una labor
 @router.delete("/{codigo_labor}", status_code=204)
 def eliminar_labor(codigo_labor: str, db: Session = Depends(get_db)):
     # Validamos existencia antes de borrar
@@ -61,6 +61,16 @@ def eliminar_labor(codigo_labor: str, db: Session = Depends(get_db)):
         raise HTTPException(
             status_code=404,
             detail="No se puede eliminar: Labor no encontrada."
+        )
+
+    # Verificamos si tiene registros de labor asociados
+    tiene_registros = db.query(RegistroLabor).filter(
+        RegistroLabor.codigo_labor == codigo_labor
+    ).first()
+    if tiene_registros:
+        raise HTTPException(
+            status_code=409,
+            detail="No se puede eliminar: la labor tiene registros asociados."
         )
 
     crud_labor.delete_labor(db, codigo_labor)
