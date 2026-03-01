@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
 from fastapi import HTTPException
 from app.models.registro_labor import RegistroLabor
-from app.schemas.registro_labor import RegistroLaborCreate, RegistroLaborUpdate
+from app.schemas.registro_labor import RegistroLaborCreate, RegistroLaborUpdate, RegistroLaborPut
 
 
 # Funcion para crear a una registro_labor
@@ -54,6 +54,27 @@ def update_registro_labor(db: Session, registro_id: int, datos: RegistroLaborUpd
         raise HTTPException(
             status_code=500,
             detail="Error al actualizar el registro de labor en la base de datos.",
+        )
+
+
+# Funcion para reemplazar un registro_labor usando Put
+def put_registro_labor(db: Session, registro_id: int, datos: RegistroLaborPut):
+    db_registro = (
+        db.query(RegistroLabor).filter(RegistroLabor.id == registro_id).first()
+    )
+    if db_registro is None:
+        return None
+    try:
+        for campo, valor in datos.model_dump().items():
+            setattr(db_registro, campo, valor)
+        db.commit()
+        db.refresh(db_registro)
+        return db_registro
+    except SQLAlchemyError:
+        db.rollback()
+        raise HTTPException(
+            status_code=500,
+            detail="Error al reemplazar el registro de labor en la base de datos.",
         )
 
 

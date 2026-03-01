@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
 from fastapi import HTTPException
 from app.models.empleado import Empleado
-from app.schemas.empleado import EmpleadoCreate, EmpleadoUpdate
+from app.schemas.empleado import EmpleadoCreate, EmpleadoUpdate, EmpleadoPut
 
 
 # Funcion para crear a un empleado
@@ -47,6 +47,25 @@ def update_empleado(db: Session, empleado_cedula: int, empleado: EmpleadoUpdate)
         raise HTTPException(
             status_code=500,
             detail="Error al actualizar el empleado en la base de datos.",
+        )
+
+
+# Funcion para reemplazar a un empleado usando Put
+def put_empleado(db: Session, empleado_cedula: int, empleado: EmpleadoPut):
+    db_empleado = db.query(Empleado).filter(Empleado.cedula == empleado_cedula).first()
+    if db_empleado is None:
+        return None
+    try:
+        for campo, valor in empleado.model_dump().items():
+            setattr(db_empleado, campo, valor)
+        db.commit()
+        db.refresh(db_empleado)
+        return db_empleado
+    except SQLAlchemyError:
+        db.rollback()
+        raise HTTPException(
+            status_code=500,
+            detail="Error al reemplazar el empleado en la base de datos.",
         )
 
 

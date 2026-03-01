@@ -24,3 +24,10 @@ class LaborUpdate(BaseModel):
     unidad_medida: Optional[str] = None
     precio: Optional[float] = None
     observacion: Optional[str] = None
+
+
+class LaborPut(BaseModel):
+    nombre: str
+    unidad_medida: str
+    precio: float
+    observacion: Optional[str] = None
