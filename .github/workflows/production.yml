@@ -38,7 +38,8 @@ jobs:
         run: npm install -g @railway/cli
 
       - name: Desplegar a Railway Production
-        run: railway up --service apidevops-prod
-        env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID_PROD }}
+        uses: railwayapp/railway-github-action@v1
+        with:
+          railway-token: ${{ secrets.RAILWAY_TOKEN }}
+          project-id: ${{ secrets.RAILWAY_PROJECT_ID_PROD }}
+          service: apidevops-prod
