@@ -36,4 +36,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Desplegar a Railway Test
-        run: railway up --service=apidevops-test --project=${{ secrets.RAILWAY_PROJECT_ID_TEST }}
+        run: railway up --service=apidevops-test --project=${{ secrets.RAILWAY_PROJECT_ID_TEST }} --environment=production

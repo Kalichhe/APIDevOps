@@ -36,4 +36,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Desplegar a Railway Production
-        run: railway up --service=apidevops-prod --project=${{ secrets.RAILWAY_PROJECT_ID_PROD }}
+        run: railway up --service=apidevops-prod --project=${{ secrets.RAILWAY_PROJECT_ID_PROD }} --environment=production
