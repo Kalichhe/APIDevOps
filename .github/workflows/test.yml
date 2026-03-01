@@ -37,7 +37,7 @@ jobs:
 
       - name: Desplegar a Railway Test
         run: |
-          railway link ${{ secrets.RAILWAY_PROJECT_ID_TEST }}
-          railway up --service=apidevops-test --environment=production
+          railway link --project ${{ secrets.RAILWAY_PROJECT_ID_TEST }}
+          railway up --service=apidevops-test --environment=test
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
