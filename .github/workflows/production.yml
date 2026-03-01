@@ -7,9 +7,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout codigo
+      - name: Checkout código
         uses: actions/checkout@v4
 
       - name: Configurar Python
@@ -24,21 +23,18 @@ jobs:
 
       - name: Correr pruebas con cobertura
         run: |
-          pytest tests/ --cov=app --cov-report=term-missing --cov-fail-under=85
+          python -m pytest tests/ --cov=app --cov-report=term-missing --cov-fail-under=85
 
   deploy:
     needs: test
     runs-on: ubuntu-latest
-
+    container: ghcr.io/railwayapp/cli:latest
+    env:
+      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+      SVC_ID: ${{ secrets.RAILWAY_PROJECT_ID_PROD }}
     steps:
-      - name: Checkout codigo
+      - name: Checkout código
         uses: actions/checkout@v4
 
-      - name: Instalar Railway CLI
-        run: npm install -g @railway/cli@3.12.0
-
       - name: Desplegar a Railway Production
-        run: railway up --service apidevops-prod --detach
-        env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID_PROD }}
+        run: railway up --service=${{ env.SVC_ID }}
