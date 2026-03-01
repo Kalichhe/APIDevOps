@@ -25,17 +25,17 @@ jobs:
         run: |
           python -m pytest tests/ --cov=app --cov-report=term-missing --cov-fail-under=60
 
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout código
-        uses: actions/checkout@v4
+  # deploy:
+  #   needs: test
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout código
+  #       uses: actions/checkout@v4
 
-      - name: Instalar Railway CLI
-        run: npm install -g @railway/cli
+  #     - name: Instalar Railway CLI
+  #       run: npm install -g @railway/cli
 
-      - name: Desplegar a Railway Test
-        run: railway up --detach
-        env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_TEST }}
+  #     - name: Desplegar a Railway Test
+  #       run: railway up --detach
+  #       env:
+  #         RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_TEST }}
