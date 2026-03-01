@@ -36,6 +36,8 @@ jobs:
         run: bash <(curl -fsSL cli.new/install)
 
       - name: Desplegar a Railway Test
-        run: railway up --service=apidevops-test
+        run: |
+          railway link ${{ secrets.RAILWAY_PROJECT_ID_TEST }}
+          railway up --service=apidevops-test --environment=test
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_TEST }}
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}

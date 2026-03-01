@@ -36,6 +36,8 @@ jobs:
         run: bash <(curl -fsSL cli.new/install)
 
       - name: Desplegar a Railway Production
-        run: railway up --service=apidevops-prod
+        run: |
+          railway link ${{ secrets.RAILWAY_PROJECT_ID_PROD }}
+          railway up --service=apidevops-prod --environment=production
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_PROD }}
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
