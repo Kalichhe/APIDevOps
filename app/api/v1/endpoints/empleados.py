@@ -1,7 +1,12 @@
 from fastapi import APIRouter, Depends, HTTPException, Response
 from sqlalchemy.orm import Session
 from app.core.dependencies import get_db
-from app.schemas.empleado import EmpleadoCreate, EmpleadoRead, EmpleadoUpdate, EmpleadoPut
+from app.schemas.empleado import (
+    EmpleadoCreate,
+    EmpleadoRead,
+    EmpleadoUpdate,
+    EmpleadoPut,
+)
 from app.crud import crud_empleado
 from app.models.registro_labor import RegistroLabor
 
@@ -86,13 +91,15 @@ def eliminar_empleado(empleado_cedula: int, db: Session = Depends(get_db)):
         )
 
     # Verificamos si tiene registros de labor asociados
-    tiene_registros = db.query(RegistroLabor).filter(
-        RegistroLabor.empleado_cedula == empleado_cedula
-    ).first()
+    tiene_registros = (
+        db.query(RegistroLabor)
+        .filter(RegistroLabor.empleado_cedula == empleado_cedula)
+        .first()
+    )
     if tiene_registros:
         raise HTTPException(
             status_code=409,
-            detail="No se puede eliminar: el empleado tiene registros de labor asociados."
+            detail="No se puede eliminar: el empleado tiene registros de labor asociados.",
         )
 
     crud_empleado.delete_empleado(db, empleado_cedula)
