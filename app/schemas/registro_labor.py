@@ -29,3 +29,10 @@ class RegistroLaborUpdate(BaseModel):
     fecha: Optional[date] = None
     cantidad: Optional[float] = None
     observacion: Optional[str] = None
+
+class RegistroLaborPut(BaseModel):
+    empleado_cedula: int
+    codigo_labor: str
+    fecha: date
+    cantidad: float
+    observacion: Optional[str] = None

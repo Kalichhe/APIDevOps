@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 from app.core.dependencies import get_db
 from app.schemas.registro_labor import (
     RegistroLaborCreate,
+    RegistroLaborPut,
     RegistroLaborRead,
     RegistroLaborUpdate,
 )
@@ -66,6 +67,37 @@ def actualizar_registro_labor(
         raise HTTPException(
             status_code=404, detail="Registro no encontrado para actualizar."
         )
+
+# Función para reemplazar un registro labor usando PUT
+@router.put("/{registro_id}", response_model=RegistroLaborRead)
+def reemplazar_registro_labor(
+    registro_id: int,
+    registro_labor: RegistroLaborPut,
+    db: Session = Depends(get_db),
+):
+    # Verificar que el registro existe
+    db_registro = crud_registro_labor.get_registro_labor(db, registro_id)
+    if not db_registro:
+        raise HTTPException(
+            status_code=404, detail="Registro no encontrado para reemplazar."
+        )
+
+    # Verificar que el empleado existe
+    db_empleado = crud_empleado.get_empleado(db, registro_labor.empleado_cedula)
+    if not db_empleado:
+        raise HTTPException(
+            status_code=404,
+            detail="No se puede reemplazar: Empleado no encontrado.",
+        )
+
+    # Verificar que la labor existe
+    db_labor = crud_labor.get_labor(db, registro_labor.codigo_labor)
+    if not db_labor:
+        raise HTTPException(
+            status_code=404, detail="No se puede reemplazar: Labor no encontrada."
+        )
+
+    return crud_registro_labor.put_registro_labor(db, registro_id, registro_labor)
 
     # Si se está cambiando el empleado, verificar que existe
     if registro_labor.empleado_cedula is not None:

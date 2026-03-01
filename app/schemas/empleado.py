@@ -23,3 +23,7 @@ class EmpleadoRead(EmpleadoBase):
 class EmpleadoUpdate(BaseModel):
     nombre: Optional[str] = None
     rol: Optional[str] = None
+
+class EmpleadoPut(BaseModel):
+    nombre: str
+    rol: str

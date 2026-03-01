@@ -1,7 +1,12 @@
 from fastapi import APIRouter, Depends, HTTPException, Response
 from sqlalchemy.orm import Session
 from app.core.dependencies import get_db
-from app.schemas.empleado import EmpleadoCreate, EmpleadoRead, EmpleadoUpdate
+from app.schemas.empleado import (
+    EmpleadoCreate,
+    EmpleadoPut,
+    EmpleadoRead,
+    EmpleadoUpdate,
+)
 from app.crud import crud_empleado
 from app.models.registro_labor import RegistroLabor
 
@@ -59,6 +64,22 @@ def actualizar_empleado(
     return crud_empleado.update_empleado(db, empleado_cedula, empleado)
 
 
+# Funcion para poder reemplazar a un empleado usando Put
+@router.put("/{empleado_cedula}", response_model=EmpleadoRead)
+def reemplazar_empleado(
+    empleado_cedula: int, empleado: EmpleadoPut, db: Session = Depends(get_db)
+):
+    # Verificamos primero si existe antes de intentar reemplazar
+    db_empleado = crud_empleado.get_empleado(db, empleado_cedula)
+    if not db_empleado:
+        raise HTTPException(
+            status_code=404, detail="No se puede reemplazar: Empleado no encontrado."
+        )
+
+    # Si existe, procedemos al CRUD
+    return crud_empleado.put_empleado(db, empleado_cedula, empleado)
+
+
 # Funcion para poder eliminar a un empleado
 @router.delete("/{empleado_cedula}", status_code=204)
 def eliminar_empleado(empleado_cedula: int, db: Session = Depends(get_db)):
@@ -70,13 +91,15 @@ def eliminar_empleado(empleado_cedula: int, db: Session = Depends(get_db)):
         )
 
     # Verificamos si tiene registros de labor asociados
-    tiene_registros = db.query(RegistroLabor).filter(
-        RegistroLabor.empleado_cedula == empleado_cedula
-    ).first()
+    tiene_registros = (
+        db.query(RegistroLabor)
+        .filter(RegistroLabor.empleado_cedula == empleado_cedula)
+        .first()
+    )
     if tiene_registros:
         raise HTTPException(
             status_code=409,
-            detail="No se puede eliminar: el empleado tiene registros de labor asociados."
+            detail="No se puede eliminar: el empleado tiene registros de labor asociados.",
         )
 
     crud_empleado.delete_empleado(db, empleado_cedula)
