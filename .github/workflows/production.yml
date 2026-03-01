@@ -31,10 +31,9 @@ jobs:
     container: ghcr.io/railwayapp/cli:latest
     env:
       RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-      SVC_ID: ${{ secrets.RAILWAY_PROJECT_ID_PROD }}
     steps:
       - name: Checkout código
         uses: actions/checkout@v4
 
       - name: Desplegar a Railway Production
-        run: railway up --service=${{ env.SVC_ID }}
+        run: railway up --service=apidevops-prod --project=${{ secrets.RAILWAY_PROJECT_ID_PROD }}
