@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from typing import Optional
 
 
@@ -16,9 +16,7 @@ class LaborCreate(LaborBase):
 
 class LaborRead(LaborBase):
     codigo_labor: str
-
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class LaborUpdate(BaseModel):
@@ -26,6 +24,7 @@ class LaborUpdate(BaseModel):
     unidad_medida: Optional[str] = None
     precio: Optional[float] = None
     observacion: Optional[str] = None
+
 
 class LaborPut(BaseModel):
     nombre: str

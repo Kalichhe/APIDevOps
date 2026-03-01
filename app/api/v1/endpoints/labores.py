@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Response
 from sqlalchemy.orm import Session
 from app.core.dependencies import get_db
-from app.schemas.labor import LaborCreate, LaborPut, LaborRead, LaborUpdate
+from app.schemas.labor import LaborCreate, LaborRead, LaborUpdate, LaborPut
 from app.crud import crud_labor
 from app.models.registro_labor import RegistroLabor
 
@@ -52,11 +52,10 @@ def actualizar_labor(
 
     return crud_labor.update_labor(db, codigo_labor, labor)
 
+
 # Funcion para poder reemplazar una labor usando Put
 @router.put("/{codigo_labor}", response_model=LaborRead)
-def reemplazar_labor(
-    codigo_labor: str, labor: LaborPut, db: Session = Depends(get_db)
-):
+def reemplazar_labor(codigo_labor: str, labor: LaborPut, db: Session = Depends(get_db)):
     # Primero validamos que la labor exista
     db_labor = crud_labor.get_labor(db, codigo_labor)
     if not db_labor:
@@ -66,25 +65,26 @@ def reemplazar_labor(
 
     return crud_labor.put_labor(db, codigo_labor, labor)
 
-# Funcion para eliminar una labor
+
 @router.delete("/{codigo_labor}", status_code=204)
 def eliminar_labor(codigo_labor: str, db: Session = Depends(get_db)):
     # Validamos existencia antes de borrar
     db_labor = crud_labor.get_labor(db, codigo_labor)
     if not db_labor:
         raise HTTPException(
-            status_code=404,
-            detail="No se puede eliminar: Labor no encontrada."
+            status_code=404, detail="No se puede eliminar: Labor no encontrada."
         )
 
     # Verificamos si tiene registros de labor asociados
-    tiene_registros = db.query(RegistroLabor).filter(
-        RegistroLabor.codigo_labor == codigo_labor
-    ).first()
+    tiene_registros = (
+        db.query(RegistroLabor)
+        .filter(RegistroLabor.codigo_labor == codigo_labor)
+        .first()
+    )
     if tiene_registros:
         raise HTTPException(
             status_code=409,
-            detail="No se puede eliminar: la labor tiene registros asociados."
+            detail="No se puede eliminar: la labor tiene registros asociados.",
         )
 
     crud_labor.delete_labor(db, codigo_labor)

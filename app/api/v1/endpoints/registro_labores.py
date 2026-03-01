@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 from app.core.dependencies import get_db
 from app.schemas.registro_labor import (
     RegistroLaborCreate,
-    RegistroLaborPut,
     RegistroLaborRead,
     RegistroLaborUpdate,
+    RegistroLaborPut,
 )
 from app.crud import (
     crud_registro_labor,
@@ -68,6 +68,26 @@ def actualizar_registro_labor(
             status_code=404, detail="Registro no encontrado para actualizar."
         )
 
+    # Si se está cambiando el empleado, verificar que existe
+    if registro_labor.empleado_cedula is not None:
+        db_empleado = crud_empleado.get_empleado(db, registro_labor.empleado_cedula)
+        if not db_empleado:
+            raise HTTPException(
+                status_code=404,
+                detail="No se puede actualizar: Empleado no encontrado.",
+            )
+
+    # Si se está cambiando la labor, verificar que existe
+    if registro_labor.codigo_labor is not None:
+        db_labor = crud_labor.get_labor(db, registro_labor.codigo_labor)
+        if not db_labor:
+            raise HTTPException(
+                status_code=404, detail="No se puede actualizar: Labor no encontrada."
+            )
+
+    return crud_registro_labor.update_registro_labor(db, registro_id, registro_labor)
+
+
 # Función para reemplazar un registro labor usando PUT
 @router.put("/{registro_id}", response_model=RegistroLaborRead)
 def reemplazar_registro_labor(
@@ -98,25 +118,6 @@ def reemplazar_registro_labor(
         )
 
     return crud_registro_labor.put_registro_labor(db, registro_id, registro_labor)
-
-    # Si se está cambiando el empleado, verificar que existe
-    if registro_labor.empleado_cedula is not None:
-        db_empleado = crud_empleado.get_empleado(db, registro_labor.empleado_cedula)
-        if not db_empleado:
-            raise HTTPException(
-                status_code=404,
-                detail="No se puede actualizar: Empleado no encontrado.",
-            )
-
-    # Si se está cambiando la labor, verificar que existe
-    if registro_labor.codigo_labor is not None:
-        db_labor = crud_labor.get_labor(db, registro_labor.codigo_labor)
-        if not db_labor:
-            raise HTTPException(
-                status_code=404, detail="No se puede actualizar: Labor no encontrada."
-            )
-
-    return crud_registro_labor.update_registro_labor(db, registro_id, registro_labor)
 
 
 # Función para eliminar un registro labor

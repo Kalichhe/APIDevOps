@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 from app.core.dependencies import get_db
 from app.schemas.empleado import (
     EmpleadoCreate,
-    EmpleadoPut,
     EmpleadoRead,
     EmpleadoUpdate,
+    EmpleadoPut,
 )
 from app.crud import crud_empleado
 from app.models.registro_labor import RegistroLabor

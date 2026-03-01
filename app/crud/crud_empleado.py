@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
 from fastapi import HTTPException
 from app.models.empleado import Empleado
-from app.schemas.empleado import EmpleadoCreate, EmpleadoPut, EmpleadoUpdate
+from app.schemas.empleado import EmpleadoCreate, EmpleadoUpdate, EmpleadoPut
 
 
 # Funcion para crear a un empleado
@@ -48,6 +48,7 @@ def update_empleado(db: Session, empleado_cedula: int, empleado: EmpleadoUpdate)
             status_code=500,
             detail="Error al actualizar el empleado en la base de datos.",
         )
+
 
 # Funcion para reemplazar a un empleado usando Put
 def put_empleado(db: Session, empleado_cedula: int, empleado: EmpleadoPut):

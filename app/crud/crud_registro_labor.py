@@ -2,7 +2,11 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
 from fastapi import HTTPException
 from app.models.registro_labor import RegistroLabor
-from app.schemas.registro_labor import RegistroLaborCreate, RegistroLaborPut, RegistroLaborUpdate
+from app.schemas.registro_labor import (
+    RegistroLaborCreate,
+    RegistroLaborUpdate,
+    RegistroLaborPut,
+)
 
 
 # Funcion para crear a una registro_labor

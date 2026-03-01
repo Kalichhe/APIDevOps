@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
 from fastapi import HTTPException
 from app.models.labor import Labor
-from app.schemas.labor import LaborCreate, LaborPut, LaborUpdate
+from app.schemas.labor import LaborCreate, LaborUpdate, LaborPut
 
 
 # Funcion para crear a una labor
@@ -48,6 +48,7 @@ def update_labor(db: Session, codigo_labor: str, labor: LaborUpdate):
             status_code=500, detail="Error al actualizar la labor en la base de datos."
         )
 
+
 # Funcion para reemplazar una labor usando Put
 def put_labor(db: Session, codigo_labor: str, labor: LaborPut):
     db_labor = db.query(Labor).filter(Labor.codigo_labor == codigo_labor).first()
@@ -65,6 +66,7 @@ def put_labor(db: Session, codigo_labor: str, labor: LaborPut):
             status_code=500,
             detail="Error al reemplazar la labor en la base de datos.",
         )
+
 
 # Funcion para eliminar una labor
 def delete_labor(db: Session, codigo_labor: str):
