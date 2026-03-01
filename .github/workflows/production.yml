@@ -28,15 +28,15 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    container: ghcr.io/railwayapp/cli:latest
-
     steps:
-      - name: Checkout codigo
+      - name: Checkout código
         uses: actions/checkout@v4
 
+      - name: Instalar Railway CLI
+        run: bash <(curl -fsSL cli.new/install)
+
       - name: Desplegar a Railway Production
+        run: railway up --service=apidevops-prod --environment=production
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        run: |
-          railway link --project ${{ secrets.RAILWAY_PROJECT_ID_PROD }}
-          railway up --service apidevops-prod --environment production
+          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID_PROD }}
