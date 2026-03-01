@@ -8,7 +8,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout código
+      - name: Checkout codigo
         uses: actions/checkout@v4
 
       - name: Configurar Python
@@ -29,11 +29,15 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     container: ghcr.io/railwayapp/cli:latest
-    env:
-      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+
     steps:
-      - name: Checkout código
+      - name: Checkout codigo
         uses: actions/checkout@v4
 
       - name: Desplegar a Railway Production
-        run: railway up --service=apidevops-prod --project=${{ secrets.RAILWAY_PROJECT_ID_PROD }} --environment=production
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+        run: railway up \
+              --service=apidevops-prod \
+              --project=${{ secrets.RAILWAY_PROJECT_ID_PROD }} \
+              --environment=production
