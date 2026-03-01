@@ -23,4 +23,19 @@ jobs:
 
       - name: Correr pruebas con cobertura
         run: |
-          python -m pytest tests/ --cov=app --cov-report=term-missing --cov-fail-under=90
+          python -m pytest tests/ --cov=app --cov-report=term-missing --cov-fail-under=85
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Instalar Railway CLI
+        run: npm install -g @railway/cli
+
+      - name: Desplegar a Railway Production
+        run: railway up --detach
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_PROD }}

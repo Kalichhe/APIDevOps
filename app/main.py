@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Request
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, RedirectResponse
 from sqlalchemy.exc import SQLAlchemyError
 from app.api.v1.api import api_router
 
@@ -7,6 +7,11 @@ from app.db.session import engine, Base
 import app.db.base  # importa los modelos para que Base los conozca
 
 app = FastAPI()
+
+
+@app.get("/")
+async def root():
+    return RedirectResponse(url="/docs")
 
 
 # ── Manejador global de excepciones no controladas ──
