@@ -37,7 +37,6 @@ jobs:
       - name: Desplegar a Railway Production
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        run: railway up \
-              --service=apidevops-prod \
-              --project=${{ secrets.RAILWAY_PROJECT_ID_PROD }} \
-              --environment=production
+        run: |
+          railway link --project ${{ secrets.RAILWAY_PROJECT_ID_PROD }}
+          railway up --service apidevops-prod --environment production
