@@ -39,3 +39,4 @@ jobs:
         with:
           service: ${{ secrets.RAILWAY_SERVICE_ID_PROD }}
           detach: true
+
