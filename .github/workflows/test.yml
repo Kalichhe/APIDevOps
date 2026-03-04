@@ -38,4 +38,4 @@ jobs:
       - name: Desplegar a Railway Test
         run: railway up --detach --service apidevops-test
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_STAGING }}
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_TEST }}
