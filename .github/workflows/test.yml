@@ -14,7 +14,7 @@ jobs:
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.14"
+          python-version: "3.11"
 
       - name: Instalar dependencias
         run: |
@@ -23,7 +23,7 @@ jobs:
 
       - name: Correr pruebas con cobertura
         run: |
-          python -m pytest tests/ --cov=app --cov-report=term-missing --cov-fail-under=60
+          python -m pytest tests/ --cov=app --cov-report=term-missing --cov-fail-under=65
 
   deploy:
     needs: test
@@ -36,6 +36,6 @@ jobs:
         run: npm install -g @railway/cli
 
       - name: Desplegar a Railway Test
-        run: railway up --detach
+        run: railway up --detach --service apidevops-test
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_TEST }}
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_STAGING }}
