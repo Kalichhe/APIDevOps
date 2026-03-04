@@ -38,4 +38,4 @@ jobs:
       - name: Desplegar a Railway Production
         run: railway up --detach --service ${{ secrets.RAILWAY_SERVICE_ID_PROD }}
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+          RAILWAY_TOKEN: "2629f1bc-0da1-469b-a0a7-ccceb311a7a3"
