@@ -39,4 +39,4 @@ jobs:
       - name: Desplegar a Railway Production
         run: railway up --detach --service apidevops-prod
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_PROD }}
