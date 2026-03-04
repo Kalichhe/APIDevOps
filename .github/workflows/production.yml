@@ -31,11 +31,11 @@ jobs:
     steps:
       - name: Checkout código
         uses: actions/checkout@v4
-
-      - name: Deploy a Railway
-        uses: bervProject/railway-deploy@main
+  
+      - name: Instalar Railway CLI
+        run: npm install -g @railway/cli@3.11.3
+  
+      - name: Desplegar a Railway Production
+        run: railway up --detach --service ${{ secrets.RAILWAY_SERVICE_ID_PROD }}
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        with:
-          service: ${{ secrets.RAILWAY_SERVICE_ID_PROD }}
-          detach: true
