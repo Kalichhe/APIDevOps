@@ -32,10 +32,8 @@ jobs:
       - name: Checkout código
         uses: actions/checkout@v4
 
-      - name: Instalar Railway CLI
-        run: npm install -g @railway/cli
-
-      - name: Desplegar a Railway Production
-        env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        run: railway up --detach --service ${{ secrets.RAILWAY_SERVICE_ID_PROD }}
+      - name: Deploy a Railway
+        uses: bervProject/railway-deploy@main
+        with:
+          railway_token: ${{ secrets.RAILWAY_TOKEN }}
+          service: ${{ secrets.RAILWAY_SERVICE_ID_PROD }}
