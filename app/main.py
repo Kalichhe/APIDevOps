@@ -1,7 +1,9 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse, RedirectResponse
 from sqlalchemy.exc import SQLAlchemyError
-from app.api.v1.api import api_router
+from app.api.v1.api import api_router_v1
+from app.api.v2.api import api_router_v2
+
 
 from app.db.session import engine, Base
 import app.db.base  # importa los modelos para que Base los conozca
@@ -38,4 +40,5 @@ except Exception as e:
     print(f"⚠️  No se pudo conectar a la base de datos: {e}")
 
 
-app.include_router(api_router, prefix="/api/v1")
+app.include_router(api_router_v1, prefix="/api/v1")
+app.include_router(api_router_v2, prefix="/api/v2")
