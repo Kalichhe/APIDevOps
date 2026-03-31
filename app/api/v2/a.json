@@ -1,0 +1,15 @@
+{
+  "documento" : "123456789",
+  "nombres" : "Juliana",
+  "apellidos" : "Betancourt",
+  "especialidad" : "Pediatría",
+  "duracionCitaMinutos" : 30,
+  "jsonDirector" : {
+    "nombre" : "Juan Fernando",
+    "jsonEmpleado" : {
+      "cedula" : "123456789",
+      "nombre" : "Carlos Lopez",
+      "rol" : "Administrador"
+    }
+  }
+}
