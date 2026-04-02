@@ -5,3 +5,7 @@ __pycache__/
 .env.test
 .env.production
 .env.testing
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

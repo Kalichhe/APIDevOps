@@ -12,7 +12,7 @@ app = FastAPI()
 
 
 @app.get("/")
-async def root():
+async def root(): 
     return RedirectResponse(url="/docs")
 
 

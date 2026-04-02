@@ -1,5 +1,4 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
-import os
 
 class Settings(BaseSettings):
     POSTGRES_USER: str
@@ -7,8 +6,6 @@ class Settings(BaseSettings):
     POSTGRES_DB: str
     DATABASE_URL: str
 
-    model_config = SettingsConfigDict(
-        env_file=f".env.{os.getenv('ENV', 'development')}"
-    )
+    model_config = SettingsConfigDict()
 
 settings = Settings()
