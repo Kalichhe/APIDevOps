@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+  - name: APIDevOps Dashboards
+    orgId: 1
+    folder: APIDevOps
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards
