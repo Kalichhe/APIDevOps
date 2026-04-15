@@ -5,6 +5,8 @@ __pycache__/
 .env.test
 .env.production
 .env.testing
+ip-permissions.json
+revoke-ip-permissions.json
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml

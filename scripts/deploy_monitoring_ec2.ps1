@@ -82,6 +82,29 @@ function New-TemporaryWorkspace {
     return $tempPath
 }
 
+function Get-HostForPublicUrl {
+    param([string]$InputHost)
+
+    if ([string]::IsNullOrWhiteSpace($InputHost)) {
+        throw "Ec2Host no puede estar vacio."
+    }
+
+    $value = $InputHost.Trim()
+
+    # Permite que Ec2Host venga con esquema o sin esquema.
+    if ($value -notmatch '^[a-zA-Z][a-zA-Z0-9+.-]*://') {
+        $value = "http://$value"
+    }
+
+    try {
+        $uri = [Uri]$value
+        return $uri.Host
+    }
+    catch {
+        throw "Ec2Host invalido: $InputHost"
+    }
+}
+
 Write-Host "== Verificando prerequisitos ==" -ForegroundColor Cyan
 Ensure-CommandExists -Name "ssh"
 Ensure-CommandExists -Name "scp"
@@ -101,6 +124,8 @@ $repoRoot = Split-Path -Parent $PSScriptRoot
 $workspace = New-TemporaryWorkspace
 
 try {
+    $publicHost = Get-HostForPublicUrl -InputHost $Ec2Host
+
     Write-Host "== Preparando archivos para AWS EC2 ==" -ForegroundColor Cyan
 
     $prometheusTemplate = Join-Path $repoRoot "prometheus.yml"
@@ -144,28 +169,39 @@ try {
     $grafanaPasswordSafe = $GrafanaAdminPassword -replace "'", "'\''"
     $remoteSetup = @"
 cd $RemotePath
+set -e
 echo "[compose] Detectando Docker Compose..."
-COMPOSE_V2_OUTPUT=`$(docker compose version 2>/dev/null || true)
-if echo "`$COMPOSE_V2_OUTPUT" | grep -qi "Docker Compose"; then
-    COMPOSE_CMD="docker compose"
+if docker compose version >/dev/null 2>&1; then
+    echo "[compose] Usando: docker compose"
+    docker compose version || true
+    GRAFANA_ADMIN_PASSWORD='$grafanaPasswordSafe' docker compose -f docker-compose.monitoring.aws.yml up -d
+    docker compose -f docker-compose.monitoring.aws.yml ps
 elif command -v docker-compose >/dev/null 2>&1; then
-    COMPOSE_CMD="docker-compose"
+    echo "[compose] Usando: docker-compose"
+    docker-compose version || true
+    GRAFANA_ADMIN_PASSWORD='$grafanaPasswordSafe' docker-compose -f docker-compose.monitoring.aws.yml up -d
+    docker-compose -f docker-compose.monitoring.aws.yml ps
 else
     echo "No se encontro Docker Compose en la instancia" >&2
     exit 1
 fi
-echo "[compose] Usando: `$COMPOSE_CMD"
-GRAFANA_ADMIN_PASSWORD='$grafanaPasswordSafe' `$COMPOSE_CMD -f docker-compose.monitoring.aws.yml up -d
+if command -v curl >/dev/null 2>&1; then
+    curl -fsS http://localhost:3000 >/dev/null && echo "[check] Grafana local responde en :3000"
+    curl -fsS http://localhost:9090/-/ready >/dev/null && echo "[check] Prometheus local responde en :9090"
+else
+    echo "[check] curl no esta instalado; se omite verificacion HTTP local"
+fi
 echo "[compose] Servicios levantados"
 "@
     Invoke-RemoteCommand $remoteSetup
 
     Write-Host ""
     Write-Host "Despliegue completado." -ForegroundColor Green
-    Write-Host "Grafana: http://$Ec2Host:3000" -ForegroundColor Green
-    Write-Host "Prometheus: http://$Ec2Host:9090" -ForegroundColor Green
+    Write-Host "Grafana: http://${publicHost}:3000" -ForegroundColor Green
+    Write-Host "Prometheus: http://${publicHost}:9090" -ForegroundColor Green
     Write-Host ""
     Write-Host "Credenciales Grafana por defecto: admin / $GrafanaAdminPassword" -ForegroundColor Cyan
+    Write-Host "Si no abre desde tu navegador, revisa el Security Group (inbound TCP 3000 y 9090 desde tu IP)." -ForegroundColor Yellow
 }
 finally {
     if (Test-Path $workspace) {

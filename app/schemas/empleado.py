@@ -27,61 +27,83 @@ class EmpleadoPut(BaseModel):
     rol: str
 
 
+class EmpleadoMessageDoctorBase(BaseModel):
+    documento: Optional[str] = None
+    nombres: Optional[str] = None
+    apellidos: Optional[str] = None
+    especialidad: Optional[str] = None
+    durationCitaMinutos: Optional[int] = None
+
+
+class EmpleadoMessageDoctorCreate(BaseModel):
+    documento: Optional[str] = None
+    nombres: Optional[str] = None
+    apellidos: Optional[str] = None
+    especialidad: Optional[str] = None
+    durationCitaMinutos: Optional[int] = None
+
+
+class EmpleadoMessageDoctorUpdate(BaseModel):
+    documento: Optional[str] = None
+    nombres: Optional[str] = None
+    apellidos: Optional[str] = None
+    especialidad: Optional[str] = None
+    durationCitaMinutos: Optional[int] = None
+
+
+class EmpleadoMessageDoctorPut(BaseModel):
+    documento: Optional[str] = None
+    nombres: Optional[str] = None
+    apellidos: Optional[str] = None
+    especialidad: Optional[str] = None
+    durationCitaMinutos: Optional[int] = None
+
+
 class EmpleadoMessageDirectorBase(BaseModel):
     nombre: Optional[str] = None
-    jsonEmpleado: EmpleadoRead
+    jsonDoctor: Optional[EmpleadoMessageDoctorBase] = None
 
 
 class EmpleadoMessageDirectorCreate(BaseModel):
     nombre: Optional[str] = None
-    jsonEmpleado: EmpleadoCreate
+    jsonDoctor: Optional[EmpleadoMessageDoctorCreate] = None
 
 
 class EmpleadoMessageDirectorUpdate(BaseModel):
     nombre: Optional[str] = None
-    jsonEmpleado: EmpleadoUpdate
+    jsonDoctor: Optional[EmpleadoMessageDoctorUpdate] = None
 
 
 class EmpleadoMessageDirectorPut(BaseModel):
     nombre: Optional[str] = None
-    jsonEmpleado: EmpleadoPut
+    jsonDoctor: Optional[EmpleadoMessageDoctorPut] = None
 
 
 class EmpleadoMessageCreate(BaseModel):
     model_config = ConfigDict(extra="ignore")
-    documento: Optional[str] = None
-    nombres: Optional[str] = None
-    apellidos: Optional[str] = None
-    especialidad: Optional[str] = None
-    durationCitaMinutos: Optional[int] = None
-    jsonDirector: EmpleadoMessageDirectorCreate
+    cedula: int
+    nombre: str
+    rol: str
+    jsonDirector: Optional[EmpleadoMessageDirectorCreate] = None
 
 
 class EmpleadoMessageUpdate(BaseModel):
     model_config = ConfigDict(extra="ignore")
-    documento: Optional[str] = None
-    nombres: Optional[str] = None
-    apellidos: Optional[str] = None
-    especialidad: Optional[str] = None
-    durationCitaMinutos: Optional[int] = None
-    jsonDirector: EmpleadoMessageDirectorUpdate
+    nombre: Optional[str] = None
+    rol: Optional[str] = None
+    jsonDirector: Optional[EmpleadoMessageDirectorUpdate] = None
 
 
 class EmpleadoMessagePut(BaseModel):
     model_config = ConfigDict(extra="ignore")
-    documento: Optional[str] = None
-    nombres: Optional[str] = None
-    apellidos: Optional[str] = None
-    especialidad: Optional[str] = None
-    durationCitaMinutos: Optional[int] = None
-    jsonDirector: EmpleadoMessageDirectorPut
+    nombre: str
+    rol: str
+    jsonDirector: Optional[EmpleadoMessageDirectorPut] = None
 
 
 class EmpleadoMessageRead(BaseModel):
     model_config = ConfigDict(extra="ignore")
-    documento: Optional[str] = None
-    nombres: Optional[str] = None
-    apellidos: Optional[str] = None
-    especialidad: Optional[str] = None
-    durationCitaMinutos: Optional[int] = None
-    jsonDirector: EmpleadoMessageDirectorBase
+    cedula: int
+    nombre: str
+    rol: str
+    jsonDirector: Optional[EmpleadoMessageDirectorBase] = None
