@@ -55,6 +55,25 @@ resource "aws_iam_role_policy_attachment" "ec2_multicontainer" {
   policy_arn = "arn:aws:iam::aws:policy/AWSElasticBeanstalkMulticontainerDocker"
 }
 
+resource "aws_iam_role_policy" "ec2_rds_access" {
+  name   = "${var.project_name}-${var.environment}-ec2-rds-policy"
+  role   = aws_iam_role.ec2.id
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect = "Allow"
+        Action = [
+          "rds-db:connect",
+          "rds:DescribeDBInstances",
+          "rds:DescribeDBClusters"
+        ]
+        Resource = "arn:aws:rds:*:*:db/*"
+      }
+    ]
+  })
+}
+
 resource "aws_iam_instance_profile" "ec2" {
   name = "${var.project_name}-${var.environment}-eb-ec2-instance-profile"
   role = aws_iam_role.ec2.name

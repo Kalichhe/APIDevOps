@@ -59,4 +59,3 @@ variable "application_env" {
   type        = map(string)
   default     = {}
 }
-

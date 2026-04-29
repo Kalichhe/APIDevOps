@@ -7,7 +7,7 @@ Esta carpeta contiene infraestructura modular en AWS para desplegar la API en El
 - network: VPC, subredes privadas/publicas e internet gateway.
 - compute_api: Elastic Beanstalk app/environment, IAM, S3 artifact y security group de app.
 - database: RDS PostgreSQL y seguridad para permitir trafico desde la app.
- - monitoring: (removed)
+- monitoring: (removed)
 - security: security group base adicional.
 
 ## Flujo recomendado
@@ -47,6 +47,23 @@ Cada ambiente define:
 - app_version_label (dev-v1, staging-v1, prod-v1)
 - source_bundle (../../../app.zip)
 - application_env (APP_ENV)
+
+## Destruir infraestructura
+
+Para eliminar todos los recursos creados en AWS:
+
+PowerShell:
+
+```powershell
+terraform -chdir=terraform/environments/dev destroy -var-file=terraform.tfvars
+```
+
+O desde la carpeta del ambiente:
+
+```powershell
+cd terraform/environments/dev
+terraform destroy -var-file=terraform.tfvars
+```
 
 ## Nota
 
