@@ -1,0 +1,717 @@
+x86_64 from amazonlinux conflicts with curl provided by curl-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.088859] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.089065] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.089285] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.089509] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.089736] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.089958] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.090417] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.090618] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.145153] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.145321] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.145540] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.145767] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.145988] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.146269] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.146522] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.146723] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.146948] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.147170] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.147394] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.147618] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.147859] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.148080] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.148313] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.148534] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.148758] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.148981] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.149219] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.149425] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.149647] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.149864] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.150301] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.203193] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.203559] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.203783] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.204005] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.204226] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.204465] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.204693] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.204922] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.205161] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.205361] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.205585] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.x86_64 from amazonlinux
+
+[   27.205796] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.206013] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.206235] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.206458] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.206670] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.206885] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.207103] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.207322] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.207547] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.207790] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.208032] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.208255] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.261929] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.262306] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.262561] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.262754] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.262975] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.263200] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.263424] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.263648] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.263876] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.264092] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.264319] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.264576] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.264769] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.264987] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.265224] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.265445] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.265676] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.265889] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.266112] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.266342] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.266575] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.266799] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.267021] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.320413] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.320608] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.320807] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.321030] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.321286] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.321471] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.321692] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.321908] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.322129] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.322602] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.322821] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.323038] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.323259] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.323487] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.323720] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.323937] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.324161] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.324382] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.324599] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.324818] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.325047] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.325272] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.325496] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.377886] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.378270] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.378480] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.378696] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.378935] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.379152] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.379379] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.379613] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.379845] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.380287] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.380507] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.380742] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.380959] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.381188] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.381404] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.381626] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.381842] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.382071] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.382273] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.382492] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.382700] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.382917] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.383134] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.436568] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.436709] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.436900] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.437128] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.437342] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.437561] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.437773] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.438051] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.438216] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.438449] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.438674] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.438903] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.439127] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.439358] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.439579] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.439800] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.440258] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.440479] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.440700] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.440922] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.441192] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.441399] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.441621] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.494811] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.494965] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.495193] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.495416] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.495644] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.495869] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.496094] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.496315] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.496542] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.496765] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.497013] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.497221] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.497453] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.497678] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.498212] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.498444] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.498658] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.498876] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.499104] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.499333] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.499568] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.499790] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.500038] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.552804] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.553103] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.553323] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.553547] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.553773] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.553989] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.554214] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.554436] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.554662] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.554889] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.555116] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.555331] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.555555] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.555797] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.556011] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.556238] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.556448] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.556673] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.556899] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.557118] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.557342] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.557567] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.557794] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.610638] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.611023] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.611273] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.611489] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.611688] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.611911] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.612133] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.612355] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.612576] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.612802] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.613027] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.613240] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.613455] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.613674] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.613897] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.614119] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.614585] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.614798] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.615024] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.615247] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.615469] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.615692] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.615914] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.668755] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.668918] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.669132] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.669350] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.669582] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.669802] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.670276] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux
+
+[   27.670473] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.670686] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.670902] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.671121] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.671345] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.671566] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.671785] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.672012] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.672239] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.672459] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.672684] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.672906] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.673148] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.673362] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.673587] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.673812] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.727481] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.727797] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.728022] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.728238] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux
+
+[   27.728469] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.728691] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.728914] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.729137] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.729372] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.729652] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.729823] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.730275] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.730520] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.730738] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.730966] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.731187] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.731404] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.731624] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.731840] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.732063] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.732276] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.732494] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.785717] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.786046] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.786258] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.786499] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.786714] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.786935] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.787153] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.787368] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.787593] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.787814] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.788052] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.788284] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.788504] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.788750] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.788958] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.789180] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.789392] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.789616] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.789838] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.790279] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.790516] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.790734] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux
+
+[   27.790947] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.843847] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.844008] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.844222] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.844457] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.844668] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.844891] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.845106] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.845328] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.845555] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.845801] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.846012] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.846237] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.846465] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.846677] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.846900] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.847125] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.847363] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.847568] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.847792] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.848020] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.848241] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.848469] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.848687] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.901444] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.901863] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.902080] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.902305] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.902551] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.902786] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.903036] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.903243] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.903488] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.903724] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.903969] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.904213] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.904448] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.904711] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.904925] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.905161] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux
+
+[   27.905395] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from @System conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.905628] cloud-init[1973]:   - package curl-minimal-7.87.0-2.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.905855] cloud-init[1973]:   - package curl-minimal-7.88.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.906094] cloud-init[1973]:   - package curl-minimal-7.88.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.906370] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.906547] cloud-init[1973]:   - package curl-minimal-8.0.1-1.amzn2023.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.906774] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.960700] cloud-init[1973]:   - package curl-minimal-8.11.1-4.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.961033] cloud-init[1973]:   - package curl-minimal-8.15.0-4.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.961272] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.961468] cloud-init[1973]:   - package curl-minimal-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.961691] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.961919] cloud-init[1973]:   - package curl-minimal-8.2.1-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.962147] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.962602] cloud-init[1973]:   - package curl-minimal-8.3.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.962829] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.1.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.963076] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.2.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.963259] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.3.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.963482] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.4.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.963699] cloud-init[1973]:   - package curl-minimal-8.5.0-1.amzn2023.0.5.x86_64 from amazonlinux conflicts with curl provided by curl-8.17.0-1.amzn2023.0.2.x86_64 from amazonlinux
+
+[   27.999882] cloud-init[1973]: (try to add '--allowerasing' to command line to replace conflicting packages or '--skip-broken' to skip uninstallable packages)
+
+[   28.047231] cloud-init[1973]: 2026-04-21 18:55:59,652 - cc_scripts_user.py[WARNING]: Failed to run module scripts-user (scripts in /var/lib/cloud/instance/scripts)
+
+[   28.049833] cloud-init[1973]: 2026-04-21 18:55:59,652 - util.py[WARNING]: Running module scripts-user (<module 'cloudinit.config.cc_scripts_user' from '/usr/lib/python3.9/site-packages/cloudinit/config/cc_scripts_user.py'>) failed
+
+ci-info: no authorized SSH keys fingerprints found for user ec2-user.
+
+<14>Apr 21 18:55:59 cloud-init: #############################################################
+
+<14>Apr 21 18:55:59 cloud-init: -----BEGIN SSH HOST KEY FINGERPRINTS-----
+
+<14>Apr 21 18:55:59 cloud-init: 256 SHA256:a4B4xlEmafxH7agOsGd28obbIqkGNEYvPQsP6ARrUDs root@ip-10-10-58-33.ec2.internal (ECDSA)
+
+<14>Apr 21 18:55:59 cloud-init: 256 SHA256:9c6jeOUp5JRnhKGptn6krgbHdtpztcfrMh+ySTSLhH4 root@ip-10-10-58-33.ec2.internal (ED25519)
+
+<14>Apr 21 18:55:59 cloud-init: -----END SSH HOST KEY FINGERPRINTS-----
+
+<14>Apr 21 18:55:59 cloud-init: #############################################################
+
+-----BEGIN SSH HOST KEY KEYS-----
+
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNFjFFR43qwZN3xDO0V33GGbmckMCF51o0ctef/m/kJGwBgnIeqrARhKEivN+HE2dSMamud2ex7s0F7vy/ZhSGY= root@ip-10-10-58-33.ec2.internal
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINoxPuVBvYX7rkcKc8u03/3HuBC/nX+33LF9NTilPa2n root@ip-10-10-58-33.ec2.internal
+
+-----END SSH HOST KEY KEYS-----
+
+[   28.110896] cloud-init[1973]: Cloud-init v. 22.2.2 finished at Tue, 21 Apr 2026 18:55:59 +0000. Datasource DataSourceEc2.  Up 28.10 seconds
+
+

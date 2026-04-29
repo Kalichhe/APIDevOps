@@ -11,3 +11,5 @@ revoke-ip-permissions.json
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+# Ignore Terraform environments directory
+terraform/environments/
