@@ -6,9 +6,9 @@ from app.schemas.empleado import EmpleadoCreate, EmpleadoUpdate, EmpleadoPut
 
 
 # Funcion para crear a un empleado
-def create_empleado(db: Session, empleado: EmpleadoCreate):
+def create_empleado(db: Session, empleado: EmpleadoCreate, data_json: dict = None):
     try:
-        db_empleado = Empleado(**empleado.model_dump())
+        db_empleado = Empleado(**empleado.model_dump(), data_json=data_json)
         db.add(db_empleado)
         db.commit()
         db.refresh(db_empleado)
@@ -31,7 +31,9 @@ def get_empleado(db: Session, empleado_cedula: int):
 
 
 # Funcion para actualizar a un empleado usando Patch
-def update_empleado(db: Session, empleado_cedula: int, empleado: EmpleadoUpdate):
+def update_empleado(
+    db: Session, empleado_cedula: int, empleado: EmpleadoUpdate, data_json: dict = None
+):
     db_empleado = db.query(Empleado).filter(Empleado.cedula == empleado_cedula).first()
     if db_empleado is None:
         return None
@@ -39,6 +41,8 @@ def update_empleado(db: Session, empleado_cedula: int, empleado: EmpleadoUpdate)
         # Solo actualiza los campos que vienen con valor
         for campo, valor in empleado.model_dump(exclude_unset=True).items():
             setattr(db_empleado, campo, valor)
+        if data_json is not None:
+            db_empleado.data_json = data_json
         db.commit()
         db.refresh(db_empleado)
         return db_empleado
@@ -51,13 +55,17 @@ def update_empleado(db: Session, empleado_cedula: int, empleado: EmpleadoUpdate)
 
 
 # Funcion para reemplazar a un empleado usando Put
-def put_empleado(db: Session, empleado_cedula: int, empleado: EmpleadoPut):
+def put_empleado(
+    db: Session, empleado_cedula: int, empleado: EmpleadoPut, data_json: dict = None
+):
     db_empleado = db.query(Empleado).filter(Empleado.cedula == empleado_cedula).first()
     if db_empleado is None:
         return None
     try:
         for campo, valor in empleado.model_dump().items():
             setattr(db_empleado, campo, valor)
+        if data_json is not None:
+            db_empleado.data_json = data_json
         db.commit()
         db.refresh(db_empleado)
         return db_empleado

@@ -1,0 +1,1165 @@
+....... .......... .......... .......... .......... 98%  274M 0s
+
+[   64.515476] cloud-init[1974]:  60450K .......... .......... .......... .......... .......... 98%  326M 0s
+
+[   64.515697] cloud-init[1974]:  60500K .......... .......... .......... .......... .......... 98%  339M 0s
+
+[   64.515907] cloud-init[1974]:  60550K .......... .......... .......... .......... .......... 98%  341M 0s
+
+[   64.516118] cloud-init[1974]:  60600K .......... .......... .......... .......... .......... 98%  294M 0s
+
+[   64.516388] cloud-init[1974]:  60650K .......... .......... .......... .......... .......... 98%  315M 0s
+
+[   64.516549] cloud-init[1974]:  60700K .......... .......... .......... .......... .......... 98%  326M 0s
+
+[   64.516767] cloud-init[1974]:  60750K .......... .......... .......... .......... .......... 98%  288M 0s
+
+[   64.516986] cloud-init[1974]:  60800K .......... .......... .......... .......... .......... 98%  341M 0s
+
+[   64.517198] cloud-init[1974]:  60850K .......... .......... .......... .......... .......... 98%  306M 0s
+
+[   64.571222] cloud-init[1974]:  60900K .......... .......... .......... .......... .......... 99%  302M 0s
+
+[   64.571564] cloud-init[1974]:  60950K .......... .......... .......... .......... .......... 99%  293M 0s
+
+[   64.571776] cloud-init[1974]:  61000K .......... .......... .......... .......... .......... 99%  284M 0s
+
+[   64.571998] cloud-init[1974]:  61050K .......... .......... .......... .......... .......... 99%  341M 0s
+
+[   64.572225] cloud-init[1974]:  61100K .......... .......... .......... .......... .......... 99%  324M 0s
+
+[   64.572443] cloud-init[1974]:  61150K .......... .......... .......... .......... .......... 99%  294M 0s
+
+[   64.572648] cloud-init[1974]:  61200K .......... .......... .......... .......... .......... 99%  303M 0s
+
+[   64.572874] cloud-init[1974]:  61250K .......... .......... .......... .......... .......... 99%  323M 0s
+
+[   64.573095] cloud-init[1974]:  61300K .......... .......... .......... .......... .......... 99%  316M 0s
+
+[   64.573308] cloud-init[1974]:  61350K .......... .......... .......... .......... .......... 99%  268M 0s
+
+[   64.573527] cloud-init[1974]:  61400K .......... .......... .......... .......... .......... 99%  333M 0s
+
+[   64.573741] cloud-init[1974]:  61450K .......... .......... .......... .......... .......... 99%  331M 0s
+
+[   64.573954] cloud-init[1974]:  61500K .......... .......... ..........                      100%  320M=2.0s
+
+[   64.574182] cloud-init[1974]: 2026-04-21 19:06:37 (30.2 MB/s) - æ/usr/local/lib/docker/cli-plugins/docker-composeÆ saved [63007385/63007385]
+
+[   64.704695] cloud-init[1974]:  prometheus Pulling
+
+[   64.706363] cloud-init[1974]:  grafana Pulling
+
+[   65.045625] cloud-init[1974]:  589002ba0eae Pulling fs layer
+
+[   65.046615] cloud-init[1974]:  0083d589f79f Pulling fs layer
+
+[   65.046844] cloud-init[1974]:  a154139e28ac Pulling fs layer
+
+[   65.047114] cloud-init[1974]:  d2400e864d89 Pulling fs layer
+
+[   65.048584] cloud-init[1974]:  5f4c407a6406 Pulling fs layer
+
+[   65.048757] cloud-init[1974]:  fa48d0c72410 Pulling fs layer
+
+[   65.048977] cloud-init[1974]:  5b4a39de381d Pulling fs layer
+
+[   65.049375] cloud-init[1974]:  bcb2a7709afa Pulling fs layer
+
+[   65.049592] cloud-init[1974]:  9f73c35df60c Pulling fs layer
+
+[   65.049814] cloud-init[1974]:  d62f64b7b42b Pulling fs layer
+
+[   65.053012] cloud-init[1974]:  08483b2dbdb1 Pulling fs layer
+
+[   65.053172] cloud-init[1974]:  4f4fb700ef54 Pulling fs layer
+
+[   65.053388] cloud-init[1974]:  3616d2fa29d1 Pulling fs layer
+
+[   65.053830] cloud-init[1974]:  5b4a39de381d Waiting
+
+[   65.054054] cloud-init[1974]:  bcb2a7709afa Waiting
+
+[   65.054284] cloud-init[1974]:  9f73c35df60c Waiting
+
+[   65.054501] cloud-init[1974]:  d62f64b7b42b Waiting
+
+[   65.054719] cloud-init[1974]:  08483b2dbdb1 Waiting
+
+[   65.055018] cloud-init[1974]:  4f4fb700ef54 Waiting
+
+[   65.055260] cloud-init[1974]:  3616d2fa29d1 Waiting
+
+[   65.055487] cloud-init[1974]:  d2400e864d89 Waiting
+
+[   65.055712] cloud-init[1974]:  5f4c407a6406 Waiting
+
+[   65.055930] cloud-init[1974]:  fa48d0c72410 Waiting
+
+[   65.070617] cloud-init[1974]:  a6680b927350 Pulling fs layer
+
+[   65.070778] cloud-init[1974]:  a2243411ec8e Pulling fs layer
+
+[   65.071193] cloud-init[1974]:  ce2ce3cfbbe4 Pulling fs layer
+
+[   65.071402] cloud-init[1974]:  e3e60763add3 Pulling fs layer
+
+[   65.071825] cloud-init[1974]:  5b801831dd96 Pulling fs layer
+
+[   65.074464] cloud-init[1974]:  9fa05948455e Pulling fs layer
+
+[   65.074949] cloud-init[1974]:  d70e68dbd61c Pulling fs layer
+
+[   65.075561] cloud-init[1974]:  f86ef4240a84 Pulling fs layer
+
+[   65.075989] cloud-init[1974]:  259391b25b59 Pulling fs layer
+
+[   65.076644] cloud-init[1974]:  f60c291aa4d9 Pulling fs layer
+
+[   65.077069] cloud-init[1974]:  a6680b927350 Waiting
+
+[   65.077969] cloud-init[1974]:  a2243411ec8e Waiting
+
+[   65.078824] cloud-init[1974]:  ce2ce3cfbbe4 Waiting
+
+[   65.079249] cloud-init[1974]:  e3e60763add3 Waiting
+
+[   65.079684] cloud-init[1974]:  5b801831dd96 Waiting
+
+[   65.080379] cloud-init[1974]:  9fa05948455e Waiting
+
+[   65.080784] cloud-init[1974]:  d70e68dbd61c Waiting
+
+[   65.081201] cloud-init[1974]:  f86ef4240a84 Waiting
+
+[   65.081640] cloud-init[1974]:  259391b25b59 Waiting
+
+[   65.082111] cloud-init[1974]:  f60c291aa4d9 Waiting
+
+[   65.096987] cloud-init[1974]:  589002ba0eae Downloading [>                                                  ]  50.67kB/3.862MB
+
+[   65.102425] cloud-init[1974]:  0083d589f79f Downloading [==================================================>]     139B/139B
+
+[   65.103417] cloud-init[1974]:  0083d589f79f Verifying Checksum
+
+[   65.103764] cloud-init[1974]:  0083d589f79f Download complete
+
+[   65.139528] cloud-init[1974]:  589002ba0eae Verifying Checksum
+
+[   65.139941] cloud-init[1974]:  589002ba0eae Download complete
+
+[   65.144953] cloud-init[1974]:  589002ba0eae Extracting [>                                                  ]  65.54kB/3.862MB
+
+[   65.166574] cloud-init[1974]:  d2400e864d89 Downloading [>                                                  ]  102.9kB/8.735MB
+
+[   65.200801] cloud-init[1974]:  5f4c407a6406 Downloading [============>                                      ]  16.38kB/67.05kB
+
+[   65.201413] cloud-init[1974]:  a154139e28ac Downloading [>                                                  ]  50.67kB/3.847MB
+
+[   65.202922] cloud-init[1974]:  5f4c407a6406 Downloading [==================================================>]  67.05kB/67.05kB
+
+[   65.214171] cloud-init[1974]:  5f4c407a6406 Verifying Checksum
+
+[   65.218327] cloud-init[1974]:  5f4c407a6406 Download complete
+
+[   65.251469] cloud-init[1974]:  589002ba0eae Extracting [===========>                                       ]  917.5kB/3.862MB
+
+[   65.269765] cloud-init[1974]:  d2400e864d89 Downloading [====================================>              ]  6.451MB/8.735MB
+
+[   65.310262] cloud-init[1974]:  a154139e28ac Verifying Checksum
+
+[   65.310569] cloud-init[1974]:  a154139e28ac Download complete
+
+[   65.312582] cloud-init[1974]:  d2400e864d89 Verifying Checksum
+
+[   65.312729] cloud-init[1974]:  d2400e864d89 Download complete
+
+[   65.346723] cloud-init[1974]:  fa48d0c72410 Downloading [==========================>                        ]  16.38kB/30.61kB
+
+[   65.347767] cloud-init[1974]:  fa48d0c72410 Downloading [==================================================>]  30.61kB/30.61kB
+
+[   65.349025] cloud-init[1974]:  fa48d0c72410 Verifying Checksum
+
+[   65.349240] cloud-init[1974]:  fa48d0c72410 Download complete
+
+[   65.358534] cloud-init[1974]:  589002ba0eae Extracting [==============================>                    ]  2.359MB/3.862MB
+
+[   65.395947] cloud-init[1974]:  5b4a39de381d Downloading [>                                                  ]  533.1kB/184.8MB
+
+[   65.414158] cloud-init[1974]:  9f73c35df60c Downloading [==================================================>]  11.93kB/11.93kB
+
+[   65.416514] cloud-init[1974]:  9f73c35df60c Verifying Checksum
+
+[   65.416661] cloud-init[1974]:  9f73c35df60c Download complete
+
+[   65.432657] cloud-init[1974]:  589002ba0eae Extracting [==================================================>]  3.862MB/3.862MB
+
+[   65.435138] cloud-init[1974]:  bcb2a7709afa Downloading [>                                                  ]  528.9kB/133.1MB
+
+[   65.527379] cloud-init[1974]:  589002ba0eae Pull complete
+
+[   65.537444] cloud-init[1974]:  0083d589f79f Extracting [==================================================>]     139B/139B
+
+[   65.544048] cloud-init[1974]:  0083d589f79f Extracting [==================================================>]     139B/139B
+
+[   65.544213] cloud-init[1974]:  5b4a39de381d Downloading [=>                                                 ]  6.995MB/184.8MB
+
+[   65.552211] cloud-init[1974]:  bcb2a7709afa Downloading [===>                                               ]  8.084MB/133.1MB
+
+[   65.580730] cloud-init[1974]:  0083d589f79f Pull complete
+
+[   65.582143] cloud-init[1974]:  d62f64b7b42b Downloading [>                                                  ]  139.5kB/12.5MB
+
+[   65.616796] cloud-init[1974]:  a154139e28ac Extracting [>                                                  ]  65.54kB/3.847MB
+
+[   65.620993] cloud-init[1974]:  5b4a39de381d Downloading [===>                                               ]  14.01MB/184.8MB
+
+[   65.676696] cloud-init[1974]:  bcb2a7709afa Downloading [=====>                                             ]  14.02MB/133.1MB
+
+[   65.698586] cloud-init[1974]:  d62f64b7b42b Downloading [==========>                                        ]  2.646MB/12.5MB
+
+[   65.724249] cloud-init[1974]:  5b4a39de381d Downloading [=====>                                             ]  21.03MB/184.8MB
+
+[   65.767132] cloud-init[1974]:  a154139e28ac Extracting [======>                                            ]  524.3kB/3.847MB
+
+[   65.772336] cloud-init[1974]:  bcb2a7709afa Downloading [=======>                                           ]  18.88MB/133.1MB
+
+[   65.820821] cloud-init[1974]:  d62f64b7b42b Downloading [====================================>              ]  9.052MB/12.5MB
+
+[   65.861661] cloud-init[1974]:  5b4a39de381d Downloading [=======>                                           ]  26.42MB/184.8MB
+
+[   65.874857] cloud-init[1974]:  bcb2a7709afa Downloading [=========>                                         ]  24.27MB/133.1MB
+
+[   65.878463] cloud-init[1974]:  d62f64b7b42b Verifying Checksum
+
+[   65.879193] cloud-init[1974]:  d62f64b7b42b Download complete
+
+[   65.944667] cloud-init[1974]:  5b4a39de381d Downloading [========>                                          ]  32.36MB/184.8MB
+
+[   65.951855] cloud-init[1974]:  a154139e28ac Extracting [========>                                          ]  655.4kB/3.847MB
+
+[   66.013408] cloud-init[1974]:  bcb2a7709afa Downloading [===========>                                       ]  31.83MB/133.1MB
+
+[   66.028354] cloud-init[1974]:  08483b2dbdb1 Downloading [==================================================>]     151B/151B
+
+[   66.029389] cloud-init[1974]:  08483b2dbdb1 Verifying Checksum
+
+[   66.029916] cloud-init[1974]:  08483b2dbdb1 Download complete
+
+[   66.062006] cloud-init[1974]:  5b4a39de381d Downloading [==========>                                        ]  39.37MB/184.8MB
+
+[   66.062332] cloud-init[1974]:  a154139e28ac Extracting [=================>                                 ]  1.311MB/3.847MB
+
+[   66.114434] cloud-init[1974]:  bcb2a7709afa Downloading [===============>                                   ]  40.46MB/133.1MB
+
+[   66.143671] cloud-init[1974]:  5b4a39de381d Downloading [=============>                                     ]  49.09MB/184.8MB
+
+[   66.158958] cloud-init[1974]:  4f4fb700ef54 Downloading [==================================================>]      32B/32B
+
+[   66.162120] cloud-init[1974]:  4f4fb700ef54 Verifying Checksum
+
+[   66.162306] cloud-init[1974]:  4f4fb700ef54 Download complete
+
+[   66.168887] cloud-init[1974]:  a154139e28ac Extracting [==========================>                        ]  2.032MB/3.847MB
+
+[   66.231661] cloud-init[1974]:  bcb2a7709afa Downloading [=================>                                 ]  47.48MB/133.1MB
+
+[   66.258455] cloud-init[1974]:  5b4a39de381d Downloading [===============>                                   ]  57.18MB/184.8MB
+
+[   66.280368] cloud-init[1974]:  a154139e28ac Extracting [================================>                  ]   2.49MB/3.847MB
+
+[   66.321580] cloud-init[1974]:  bcb2a7709afa Downloading [====================>                              ]  54.49MB/133.1MB
+
+[   66.322692] cloud-init[1974]:  3616d2fa29d1 Downloading [==================================================>]  1.334kB/1.334kB
+
+[   66.324970] cloud-init[1974]:  3616d2fa29d1 Verifying Checksum
+
+[   66.325658] cloud-init[1974]:  3616d2fa29d1 Download complete
+
+[   66.356311] cloud-init[1974]:  5b4a39de381d Downloading [=================>                                 ]  63.12MB/184.8MB
+
+[   66.418662] cloud-init[1974]:  a154139e28ac Extracting [===================================>               ]  2.753MB/3.847MB
+
+[   66.421650] cloud-init[1974]:  bcb2a7709afa Downloading [======================>                            ]  60.97MB/133.1MB
+
+[   66.460167] cloud-init[1974]:  5b4a39de381d Downloading [==================>                                ]  69.05MB/184.8MB
+
+[   66.483219] cloud-init[1974]:  a6680b927350 Downloading [=>                                                 ]  16.38kB/783.4kB
+
+[   66.500160] cloud-init[1974]:  a154139e28ac Extracting [=============================================>     ]  3.473MB/3.847MB
+
+[   66.506716] cloud-init[1974]:  a6680b927350 Verifying Checksum
+
+[   66.511703] cloud-init[1974]:  a6680b927350 Download complete
+
+[   66.514446] cloud-init[1974]:  a6680b927350 Extracting [==>                                                ]  32.77kB/783.4kB
+
+[   66.536642] cloud-init[1974]:  bcb2a7709afa Downloading [=========================>                         ]  67.45MB/133.1MB
+
+[   66.560934] cloud-init[1974]:  5b4a39de381d Downloading [====================>                              ]  74.99MB/184.8MB
+
+[   66.622666] cloud-init[1974]:  a154139e28ac Extracting [=================================================> ]  3.801MB/3.847MB
+
+[   66.636798] cloud-init[1974]:  bcb2a7709afa Downloading [===========================>                       ]  74.46MB/133.1MB
+
+[   66.637005] cloud-init[1974]:  a6680b927350 Extracting [=================================>                 ]  524.3kB/783.4kB
+
+[   66.680861] cloud-init[1974]:  a154139e28ac Extracting [==================================================>]  3.847MB/3.847MB
+
+[   66.717538] cloud-init[1974]:  5b4a39de381d Downloading [=====================>                             ]  80.39MB/184.8MB
+
+[   66.756554] cloud-init[1974]:  a6680b927350 Extracting [===========================================>       ]  688.1kB/783.4kB
+
+[   66.756729] cloud-init[1974]:  bcb2a7709afa Downloading [===============================>                   ]  82.56MB/133.1MB
+
+[   66.761364] cloud-init[1974]:  a6680b927350 Extracting [==================================================>]  783.4kB/783.4kB
+
+[   66.761560] cloud-init[1974]:  a2243411ec8e Downloading [==>                                                ]  16.38kB/324.6kB
+
+[   66.771501] cloud-init[1974]:  5b4a39de381d Downloading [=======================>                           ]  86.32MB/184.8MB
+
+[   66.855724] cloud-init[1974]:  bcb2a7709afa Downloading [=================================>                 ]  90.11MB/133.1MB
+
+[   66.874626] cloud-init[1974]:  a154139e28ac Extracting [==================================================>]  3.847MB/3.847MB
+
+[   66.879333] cloud-init[1974]:  a2243411ec8e Downloading [==================================================>]  324.6kB/324.6kB
+
+[   66.882316] cloud-init[1974]:  a2243411ec8e Verifying Checksum
+
+[   66.884227] cloud-init[1974]:  a2243411ec8e Download complete
+
+[   66.895243] cloud-init[1974]:  5b4a39de381d Downloading [=========================>                         ]   92.8MB/184.8MB
+
+[   66.961298] cloud-init[1974]:  bcb2a7709afa Downloading [====================================>              ]  97.67MB/133.1MB
+
+[   66.995567] cloud-init[1974]:  5b4a39de381d Downloading [==========================>                        ]   98.2MB/184.8MB
+
+[   67.057868] cloud-init[1974]:  a6680b927350 Pull complete
+
+[   67.064374] cloud-init[1974]:  a2243411ec8e Extracting [=====>                                             ]  32.77kB/324.6kB
+
+[   67.083836] cloud-init[1974]:  bcb2a7709afa Downloading [======================================>            ]  103.6MB/133.1MB
+
+[   67.119072] cloud-init[1974]:  5b4a39de381d Downloading [===========================>                       ]  102.5MB/184.8MB
+
+[   67.158576] cloud-init[1974]:  a2243411ec8e Extracting [==================================================>]  324.6kB/324.6kB
+
+[   67.223605] cloud-init[1974]:  bcb2a7709afa Downloading [========================================>          ]    109MB/133.1MB
+
+[   67.227753] cloud-init[1974]:  a2243411ec8e Extracting [==================================================>]  324.6kB/324.6kB
+
+[   67.235892] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [>                                                  ]  540.3kB/81.28MB
+
+[   67.265718] cloud-init[1974]:  5b4a39de381d Downloading [=============================>                     ]  107.4MB/184.8MB
+
+[   67.347267] cloud-init[1974]:  a154139e28ac Pull complete
+
+[   67.374987] cloud-init[1974]:  bcb2a7709afa Downloading [==========================================>        ]  113.9MB/133.1MB
+
+[   67.377151] cloud-init[1974]:  5b4a39de381d Downloading [=============================>                     ]  110.6MB/184.8MB
+
+[   67.411115] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [=>                                                 ]  3.242MB/81.28MB
+
+[   67.466433] cloud-init[1974]:  5b4a39de381d Downloading [===============================>                   ]    116MB/184.8MB
+
+[   67.477516] cloud-init[1974]:  bcb2a7709afa Downloading [============================================>      ]  118.2MB/133.1MB
+
+[   67.483813] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [====>                                              ]  8.108MB/81.28MB
+
+[   67.553818] cloud-init[1974]:  d2400e864d89 Extracting [>                                                  ]   98.3kB/8.735MB
+
+[   67.558884] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [=======>                                           ]  11.89MB/81.28MB
+
+[   67.592364] cloud-init[1974]:  5b4a39de381d Downloading [================================>                  ]  120.9MB/184.8MB
+
+[   67.613853] cloud-init[1974]:  bcb2a7709afa Downloading [==============================================>    ]  124.1MB/133.1MB
+
+[   67.686794] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [=========>                                         ]  15.14MB/81.28MB
+
+[   67.700484] cloud-init[1974]:  d2400e864d89 Extracting [==>                                                ]  393.2kB/8.735MB
+
+[   67.730538] cloud-init[1974]:  5b4a39de381d Downloading [==================================>                ]  126.3MB/184.8MB
+
+[   67.770817] cloud-init[1974]:  bcb2a7709afa Downloading [================================================>  ]  129.5MB/133.1MB
+
+[   67.782513] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [===========>                                       ]  18.38MB/81.28MB
+
+[   67.816219] cloud-init[1974]:  d2400e864d89 Extracting [====>                                              ]  786.4kB/8.735MB
+
+[   67.820153] cloud-init[1974]:  bcb2a7709afa Verifying Checksum
+
+[   67.822103] cloud-init[1974]:  bcb2a7709afa Download complete
+
+[   67.827089] cloud-init[1974]:  a2243411ec8e Pull complete
+
+[   67.860343] cloud-init[1974]:  5b4a39de381d Downloading [====================================>              ]  134.4MB/184.8MB
+
+[   67.886257] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [==============>                                    ]  23.79MB/81.28MB
+
+[   67.922012] cloud-init[1974]:  d2400e864d89 Extracting [======>                                            ]  1.081MB/8.735MB
+
+[   67.943444] cloud-init[1974]:  5b4a39de381d Downloading [======================================>            ]  141.9MB/184.8MB
+
+[   67.971817] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [====================>                              ]  32.98MB/81.28MB
+
+[   68.012120] cloud-init[1974]:  d2400e864d89 Extracting [=========>                                         ]  1.671MB/8.735MB
+
+[   68.036962] cloud-init[1974]:  5b4a39de381d Downloading [========================================>          ]  148.4MB/184.8MB
+
+[   68.060161] cloud-init[1974]:  e3e60763add3 Downloading [>                                                  ]  539.8kB/70.46MB
+
+[   68.088231] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [======================>                            ]   37.3MB/81.28MB
+
+[   68.132319] cloud-init[1974]:  d2400e864d89 Extracting [===========>                                       ]  2.064MB/8.735MB
+
+[   68.161760] cloud-init[1974]:  5b4a39de381d Downloading [=========================================>         ]  153.2MB/184.8MB
+
+[   68.173106] cloud-init[1974]:  e3e60763add3 Downloading [===>                                               ]  4.317MB/70.46MB
+
+[   68.212398] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [=========================>                         ]  42.17MB/81.28MB
+
+[   68.233221] cloud-init[1974]:  d2400e864d89 Extracting [=============>                                     ]  2.359MB/8.735MB
+
+[   68.256841] cloud-init[1974]:  5b4a39de381d Downloading [===========================================>       ]  160.3MB/184.8MB
+
+[   68.282639] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [============================>                      ]  47.04MB/81.28MB
+
+[   68.305512] cloud-init[1974]:  e3e60763add3 Downloading [=====>                                             ]  8.095MB/70.46MB
+
+[   68.351264] cloud-init[1974]:  5b4a39de381d Downloading [============================================>      ]  165.7MB/184.8MB
+
+[   68.371916] cloud-init[1974]:  d2400e864d89 Extracting [===============>                                   ]  2.654MB/8.735MB
+
+[   68.393183] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [================================>                  ]  53.52MB/81.28MB
+
+[   68.406472] cloud-init[1974]:  e3e60763add3 Downloading [========>                                          ]  12.41MB/70.46MB
+
+[   68.457019] cloud-init[1974]:  5b4a39de381d Downloading [==============================================>    ]  172.1MB/184.8MB
+
+[   68.525244] cloud-init[1974]:  e3e60763add3 Downloading [============>                                      ]  17.27MB/70.46MB
+
+[   68.535359] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [======================================>            ]  62.72MB/81.28MB
+
+[   68.579664] cloud-init[1974]:  d2400e864d89 Extracting [================>                                  ]  2.851MB/8.735MB
+
+[   68.589631] cloud-init[1974]:  5b4a39de381d Downloading [===============================================>   ]  176.4MB/184.8MB
+
+[   68.630937] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [=========================================>         ]  68.12MB/81.28MB
+
+[   68.642717] cloud-init[1974]:  e3e60763add3 Downloading [================>                                  ]  23.74MB/70.46MB
+
+[   68.683259] cloud-init[1974]:  5b4a39de381d Downloading [=================================================> ]  183.5MB/184.8MB
+
+[   68.703256] cloud-init[1974]:  d2400e864d89 Extracting [==================>                                ]  3.146MB/8.735MB
+
+[   68.710277] cloud-init[1974]:  5b4a39de381d Verifying Checksum
+
+[   68.711876] cloud-init[1974]:  5b4a39de381d Download complete
+
+[   68.724367] cloud-init[1974]:  ce2ce3cfbbe4 Downloading [=============================================>     ]  74.07MB/81.28MB
+
+[   68.744376] cloud-init[1974]:  e3e60763add3 Downloading [=====================>                             ]  30.22MB/70.46MB
+
+[   68.784423] cloud-init[1974]:  d2400e864d89 Extracting [====================>                              ]  3.539MB/8.735MB
+
+[   68.814140] cloud-init[1974]:  ce2ce3cfbbe4 Verifying Checksum
+
+[   68.816967] cloud-init[1974]:  ce2ce3cfbbe4 Download complete
+
+[   68.841139] cloud-init[1974]:  e3e60763add3 Downloading [==========================>                        ]  36.68MB/70.46MB
+
+[   68.845980] cloud-init[1974]:  5b801831dd96 Downloading [==================================================>]     636B/636B
+
+[   68.849525] cloud-init[1974]:  5b801831dd96 Verifying Checksum
+
+[   68.850762] cloud-init[1974]:  5b801831dd96 Download complete
+
+[   68.884558] cloud-init[1974]:  d2400e864d89 Extracting [=======================>                           ]   4.03MB/8.735MB
+
+[   68.890360] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [>                                                  ]  557.1kB/81.28MB
+
+[   68.915447] cloud-init[1974]:  9fa05948455e Downloading [==================================================>]  4.024kB/4.024kB
+
+[   68.916194] cloud-init[1974]:  9fa05948455e Verifying Checksum
+
+[   68.916773] cloud-init[1974]:  9fa05948455e Download complete
+
+[   68.939341] cloud-init[1974]:  e3e60763add3 Downloading [=============================>                     ]  41.54MB/70.46MB
+
+[   68.951257] cloud-init[1974]:  d70e68dbd61c Downloading [==================================================>]   1.48kB/1.48kB
+
+[   68.954120] cloud-init[1974]:  d70e68dbd61c Verifying Checksum
+
+[   68.954312] cloud-init[1974]:  d70e68dbd61c Download complete
+
+[   68.990342] cloud-init[1974]:  d2400e864d89 Extracting [===========================>                       ]  4.817MB/8.735MB
+
+[   69.006734] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [=>                                                 ]  1.671MB/81.28MB
+
+[   69.014860] cloud-init[1974]:  f86ef4240a84 Downloading [=============>                                     ]  16.38kB/62.53kB
+
+[   69.046257] cloud-init[1974]:  f86ef4240a84 Downloading [==================================================>]  62.53kB/62.53kB
+
+[   69.047329] cloud-init[1974]:  f86ef4240a84 Verifying Checksum
+
+[   69.047895] cloud-init[1974]:  f86ef4240a84 Download complete
+
+[   69.065950] cloud-init[1974]:  e3e60763add3 Downloading [=================================>                 ]  47.47MB/70.46MB
+
+[   69.069748] cloud-init[1974]:  259391b25b59 Downloading [==================================================>]     100B/100B
+
+[   69.069927] cloud-init[1974]:  259391b25b59 Verifying Checksum
+
+[   69.070797] cloud-init[1974]:  259391b25b59 Download complete
+
+[   69.092603] cloud-init[1974]:  d2400e864d89 Extracting [================================>                  ]  5.603MB/8.735MB
+
+[   69.154306] cloud-init[1974]:  e3e60763add3 Downloading [====================================>              ]  51.79MB/70.46MB
+
+[   69.166303] cloud-init[1974]:  f60c291aa4d9 Downloading [==================================================>]     694B/694B
+
+[   69.166457] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [=>                                                 ]  2.785MB/81.28MB
+
+[   69.177176] cloud-init[1974]:  f60c291aa4d9 Verifying Checksum
+
+[   69.178561] cloud-init[1974]:  f60c291aa4d9 Download complete
+
+[   69.199757] cloud-init[1974]:  d2400e864d89 Extracting [====================================>              ]  6.291MB/8.735MB
+
+[   69.275657] cloud-init[1974]:  e3e60763add3 Downloading [========================================>          ]  57.19MB/70.46MB
+
+[   69.311784] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [==>                                                ]  3.899MB/81.28MB
+
+[   69.311944] cloud-init[1974]:  d2400e864d89 Extracting [=========================================>         ]  7.176MB/8.735MB
+
+[   69.377284] cloud-init[1974]:  e3e60763add3 Downloading [============================================>      ]  62.58MB/70.46MB
+
+[   69.412434] cloud-init[1974]:  d2400e864d89 Extracting [===============================================>   ]  8.258MB/8.735MB
+
+[   69.468461] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [===>                                               ]  5.014MB/81.28MB
+
+[   69.477888] cloud-init[1974]:  e3e60763add3 Downloading [=================================================> ]   69.6MB/70.46MB
+
+[   69.495572] cloud-init[1974]:  e3e60763add3 Verifying Checksum
+
+[   69.495781] cloud-init[1974]:  e3e60763add3 Download complete
+
+[   69.499501] cloud-init[1974]:  d2400e864d89 Extracting [==================================================>]  8.735MB/8.735MB
+
+[   69.524727] cloud-init[1974]:  d2400e864d89 Pull complete
+
+[   69.530036] cloud-init[1974]:  5f4c407a6406 Extracting [========================>                          ]  32.77kB/67.05kB
+
+[   69.531766] cloud-init[1974]:  5f4c407a6406 Extracting [==================================================>]  67.05kB/67.05kB
+
+[   69.578243] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [===>                                               ]  6.128MB/81.28MB
+
+[   69.583586] cloud-init[1974]:  5f4c407a6406 Pull complete
+
+[   69.586238] cloud-init[1974]:  fa48d0c72410 Extracting [==================================================>]  30.61kB/30.61kB
+
+[   69.586779] cloud-init[1974]:  fa48d0c72410 Extracting [==================================================>]  30.61kB/30.61kB
+
+[   69.631290] cloud-init[1974]:  fa48d0c72410 Pull complete
+
+[   69.677254] cloud-init[1974]:  5b4a39de381d Extracting [>                                                  ]  557.1kB/184.8MB
+
+[   69.721512] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [====>                                              ]  7.242MB/81.28MB
+
+[   69.780625] cloud-init[1974]:  5b4a39de381d Extracting [>                                                  ]  2.228MB/184.8MB
+
+[   69.875453] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [=====>                                             ]  8.356MB/81.28MB
+
+[   69.898270] cloud-init[1974]:  5b4a39de381d Extracting [=>                                                 ]  3.899MB/184.8MB
+
+[   69.996444] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [=====>                                             ]   9.47MB/81.28MB
+
+[   70.012097] cloud-init[1974]:  5b4a39de381d Extracting [=>                                                 ]  5.571MB/184.8MB
+
+[   70.126366] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [======>                                            ]  10.58MB/81.28MB
+
+[   70.131263] cloud-init[1974]:  5b4a39de381d Extracting [=>                                                 ]  7.242MB/184.8MB
+
+[   70.260023] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [=======>                                           ]   11.7MB/81.28MB
+
+[   70.260932] cloud-init[1974]:  5b4a39de381d Extracting [==>                                                ]  8.913MB/184.8MB
+
+[   70.364332] cloud-init[1974]:  5b4a39de381d Extracting [==>                                                ]  10.58MB/184.8MB
+
+[   70.364504] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [=======>                                           ]  12.81MB/81.28MB
+
+[   70.469471] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [========>                                          ]  13.93MB/81.28MB
+
+[   70.491305] cloud-init[1974]:  5b4a39de381d Extracting [===>                                               ]  12.26MB/184.8MB
+
+[   70.597712] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [=========>                                         ]   15.6MB/81.28MB
+
+[   70.602471] cloud-init[1974]:  5b4a39de381d Extracting [===>                                               ]  13.93MB/184.8MB
+
+[   70.713267] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [==========>                                        ]  16.71MB/81.28MB
+
+[   70.732405] cloud-init[1974]:  5b4a39de381d Extracting [====>                                              ]   15.6MB/184.8MB
+
+[   70.830639] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [===========>                                       ]  18.38MB/81.28MB
+
+[   70.854893] cloud-init[1974]:  5b4a39de381d Extracting [====>                                              ]  17.27MB/184.8MB
+
+[   70.942266] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [============>                                      ]  20.05MB/81.28MB
+
+[   70.987336] cloud-init[1974]:  5b4a39de381d Extracting [=====>                                             ]  18.94MB/184.8MB
+
+[   71.093523] cloud-init[1974]:  5b4a39de381d Extracting [=====>                                             ]  20.05MB/184.8MB
+
+[   71.093840] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [=============>                                     ]  21.73MB/81.28MB
+
+[   71.195670] cloud-init[1974]:  5b4a39de381d Extracting [=====>                                             ]  21.17MB/184.8MB
+
+[   71.213131] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [==============>                                    ]  22.84MB/81.28MB
+
+[   71.304480] cloud-init[1974]:  5b4a39de381d Extracting [======>                                            ]  22.84MB/184.8MB
+
+[   71.341847] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [==============>                                    ]  23.95MB/81.28MB
+
+[   71.421679] cloud-init[1974]:  5b4a39de381d Extracting [======>                                            ]  24.51MB/184.8MB
+
+[   71.451298] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [===============>                                   ]  25.07MB/81.28MB
+
+[   71.562812] cloud-init[1974]:  5b4a39de381d Extracting [=======>                                           ]  26.18MB/184.8MB
+
+[   71.563010] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [================>                                  ]   27.3MB/81.28MB
+
+[   71.698857] cloud-init[1974]:  5b4a39de381d Extracting [=======>                                           ]  27.85MB/184.8MB
+
+[   71.719205] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [==================>                                ]  30.08MB/81.28MB
+
+[   71.840716] cloud-init[1974]:  5b4a39de381d Extracting [========>                                          ]  30.08MB/184.8MB
+
+[   71.897597] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [==================>                                ]  30.64MB/81.28MB
+
+[   71.958708] cloud-init[1974]:  5b4a39de381d Extracting [========>                                          ]   31.2MB/184.8MB
+
+[   72.014252] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [===================>                               ]  31.75MB/81.28MB
+
+[   72.084605] cloud-init[1974]:  5b4a39de381d Extracting [========>                                          ]  32.87MB/184.8MB
+
+[   72.114971] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [====================>                              ]  33.42MB/81.28MB
+
+[   72.219511] cloud-init[1974]:  5b4a39de381d Extracting [=========>                                         ]  34.54MB/184.8MB
+
+[   72.236875] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [=====================>                             ]  35.65MB/81.28MB
+
+[   72.368236] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [=======================>                           ]  38.44MB/81.28MB
+
+[   72.401622] cloud-init[1974]:  5b4a39de381d Extracting [=========>                                         ]  36.21MB/184.8MB
+
+[   72.473407] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [========================>                          ]  39.55MB/81.28MB
+
+[   72.511363] cloud-init[1974]:  5b4a39de381d Extracting [==========>                                        ]  37.88MB/184.8MB
+
+[   72.579599] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [=========================>                         ]  40.67MB/81.28MB
+
+[   72.643515] cloud-init[1974]:  5b4a39de381d Extracting [==========>                                        ]  39.55MB/184.8MB
+
+[   72.790749] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [==========================>                        ]  42.34MB/81.28MB
+
+[   72.792109] cloud-init[1974]:  5b4a39de381d Extracting [===========>                                       ]  41.22MB/184.8MB
+
+[   72.892120] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [===========================>                       ]  44.56MB/81.28MB
+
+[   72.897377] cloud-init[1974]:  5b4a39de381d Extracting [===========>                                       ]  42.34MB/184.8MB
+
+[   72.992766] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [==============================>                    ]  49.02MB/81.28MB
+
+[   73.040309] cloud-init[1974]:  5b4a39de381d Extracting [===========>                                       ]  43.45MB/184.8MB
+
+[   73.094143] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [================================>                  ]  52.92MB/81.28MB
+
+[   73.166459] cloud-init[1974]:  5b4a39de381d Extracting [============>                                      ]  44.56MB/184.8MB
+
+[   73.196507] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [===================================>               ]  57.38MB/81.28MB
+
+[   73.279092] cloud-init[1974]:  5b4a39de381d Extracting [============>                                      ]  46.24MB/184.8MB
+
+[   73.301272] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [======================================>            ]  62.39MB/81.28MB
+
+[   73.391633] cloud-init[1974]:  5b4a39de381d Extracting [============>                                      ]  47.91MB/184.8MB
+
+[   73.412594] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [=========================================>         ]  66.85MB/81.28MB
+
+[   73.512653] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [===========================================>       ]   71.3MB/81.28MB
+
+[   73.531712] cloud-init[1974]:  5b4a39de381d Extracting [=============>                                     ]  49.58MB/184.8MB
+
+[   73.624651] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [==============================================>    ]   75.2MB/81.28MB
+
+[   73.679596] cloud-init[1974]:  5b4a39de381d Extracting [=============>                                     ]  51.25MB/184.8MB
+
+[   73.730403] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [================================================>  ]   79.1MB/81.28MB
+
+[   73.782353] cloud-init[1974]:  5b4a39de381d Extracting [==============>                                    ]  52.36MB/184.8MB
+
+[   73.916869] cloud-init[1974]:  5b4a39de381d Extracting [==============>                                    ]  54.03MB/184.8MB
+
+[   73.929679] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [=================================================> ]  80.77MB/81.28MB
+
+[   74.032569] cloud-init[1974]:  5b4a39de381d Extracting [===============>                                   ]  55.71MB/184.8MB
+
+[   74.082049] cloud-init[1974]:  ce2ce3cfbbe4 Extracting [==================================================>]  81.28MB/81.28MB
+
+[   74.134254] cloud-init[1974]:  5b4a39de381d Extracting [===============>                                   ]  56.82MB/184.8MB
+
+[   74.139216] cloud-init[1974]:  ce2ce3cfbbe4 Pull complete
+
+[   74.183793] cloud-init[1974]:  e3e60763add3 Extracting [>                                                  ]  557.1kB/70.46MB
+
+[   74.256899] cloud-init[1974]:  5b4a39de381d Extracting [===============>                                   ]  58.49MB/184.8MB
+
+[   74.318738] cloud-init[1974]:  e3e60763add3 Extracting [=>                                                 ]  2.785MB/70.46MB
+
+[   74.403164] cloud-init[1974]:  5b4a39de381d Extracting [================>                                  ]  60.16MB/184.8MB
+
+[   74.429516] cloud-init[1974]:  e3e60763add3 Extracting [===>                                               ]  4.456MB/70.46MB
+
+[   74.537318] cloud-init[1974]:  e3e60763add3 Extracting [====>                                              ]  6.128MB/70.46MB
+
+[   74.549749] cloud-init[1974]:  5b4a39de381d Extracting [================>                                  ]  61.28MB/184.8MB
+
+[   74.651784] cloud-init[1974]:  e3e60763add3 Extracting [=====>                                             ]  7.799MB/70.46MB
+
+[   74.655338] cloud-init[1974]:  5b4a39de381d Extracting [================>                                  ]  62.39MB/184.8MB
+
+[   74.817556] cloud-init[1974]:  e3e60763add3 Extracting [======>                                            ]   9.47MB/70.46MB
+
+[   74.822504] cloud-init[1974]:  5b4a39de381d Extracting [=================>                                 ]   63.5MB/184.8MB
+
+[   74.978785] cloud-init[1974]:  5b4a39de381d Extracting [=================>                                 ]  64.06MB/184.8MB
+
+[   74.991887] cloud-init[1974]:  e3e60763add3 Extracting [=======>                                           ]  11.14MB/70.46MB
+
+[   75.110345] cloud-init[1974]:  e3e60763add3 Extracting [========>                                          ]  12.26MB/70.46MB
+
+[   75.153755] cloud-init[1974]:  5b4a39de381d Extracting [=================>                                 ]  64.62MB/184.8MB
+
+[   75.246195] cloud-init[1974]:  e3e60763add3 Extracting [=========>                                         ]  13.37MB/70.46MB
+
+[   75.292225] cloud-init[1974]:  5b4a39de381d Extracting [=================>                                 ]  65.18MB/184.8MB
+
+[   75.374611] cloud-init[1974]:  e3e60763add3 Extracting [==========>                                        ]  14.48MB/70.46MB
+
+[   75.406570] cloud-init[1974]:  5b4a39de381d Extracting [==================>                                ]  66.85MB/184.8MB
+
+[   75.501770] cloud-init[1974]:  e3e60763add3 Extracting [===========>                                       ]   15.6MB/70.46MB
+
+[   75.530505] cloud-init[1974]:  5b4a39de381d Extracting [==================>                                ]  69.63MB/184.8MB
+
+[   75.606425] cloud-init[1974]:  e3e60763add3 Extracting [===========>                                       ]  16.71MB/70.46MB
+
+[   75.650752] cloud-init[1974]:  5b4a39de381d Extracting [===================>                               ]  71.86MB/184.8MB
+
+[   75.724209] cloud-init[1974]:  e3e60763add3 Extracting [============>                                      ]  17.83MB/70.46MB
+
+[   75.759537] cloud-init[1974]:  5b4a39de381d Extracting [====================>                              ]  74.09MB/184.8MB
+
+[   75.850435] cloud-init[1974]:  e3e60763add3 Extracting [=============>                                     ]   19.5MB/70.46MB
+
+[   75.872829] cloud-init[1974]:  5b4a39de381d Extracting [====================>                              ]  76.32MB/184.8MB
+
+[   75.956869] cloud-init[1974]:  e3e60763add3 Extracting [==============>                                    ]  20.61MB/70.46MB
+
+[   75.995588] cloud-init[1974]:  5b4a39de381d Extracting [=====================>                             ]  78.54MB/184.8MB
+
+[   76.083410] cloud-init[1974]:  e3e60763add3 Extracting [===============>                                   ]  21.73MB/70.46MB
+
+[   76.116548] cloud-init[1974]:  5b4a39de381d Extracting [======================>                            ]  81.33MB/184.8MB
+
+[   76.183469] cloud-init[1974]:  e3e60763add3 Extracting [================>                                  ]  22.84MB/70.46MB
+
+[   76.242730] cloud-init[1974]:  5b4a39de381d Extracting [======================>                            ]     83MB/184.8MB
+
+[   76.337402] cloud-init[1974]:  e3e60763add3 Extracting [=================>                                 ]  24.51MB/70.46MB
+
+[   76.371912] cloud-init[1974]:  5b4a39de381d Extracting [======================>                            ]  84.67MB/184.8MB
+
+[   76.481957] cloud-init[1974]:  5b4a39de381d Extracting [=======================>                           ]  85.79MB/184.8MB
+
+[   76.504759] cloud-init[1974]:  e3e60763add3 Extracting [=================>                                 ]  25.07MB/70.46MB
+
+[   76.615622] cloud-init[1974]:  5b4a39de381d Extracting [=======================>                           ]  87.46MB/184.8MB
+
+[   76.618913] cloud-init[1974]:  e3e60763add3 Extracting [===================>                               ]   27.3MB/70.46MB
+
+[   76.741737] cloud-init[1974]:  e3e60763add3 Extracting [====================>                              ]  29.52MB/70.46MB
+
+[   76.755845] cloud-init[1974]:  5b4a39de381d Extracting [========================>                          ]  89.13MB/184.8MB
+
+[   76.842442] cloud-init[1974]:  e3e60763add3 Extracting [======================>                            ]  31.75MB/70.46MB
+
+[   76.869242] cloud-init[1974]:  5b4a39de381d Extracting [========================>                          ]   90.8MB/184.8MB
+
+[   76.972462] cloud-init[1974]:  5b4a39de381d Extracting [=========================>                         ]  93.03MB/184.8MB
+
+[   76.978081] cloud-init[1974]:  e3e60763add3 Extracting [=======================>                           ]  33.42MB/70.46MB
+
+[   77.082859] cloud-init[1974]:  5b4a39de381d Extracting [=========================>                         ]  95.26MB/184.8MB
+
+[   77.106450] cloud-init[1974]:  e3e60763add3 Extracting [========================>                          ]  35.09MB/70.46MB
+
+[   77.190241] cloud-init[1974]:  5b4a39de381d Extracting [==========================>                        ]  97.48MB/184.8MB
+
+[   77.210092] cloud-init[1974]:  e3e60763add3 Extracting [=========================>                         ]  35.65MB/70.46MB
+
+[   77.303522] cloud-init[1974]:  5b4a39de381d Extracting [===========================>                       ]  100.3MB/184.8MB
+
+[   77.318545] cloud-init[1974]:  e3e60763add3 Extracting [============================>                      ]  39.55MB/70.46MB
+
+[   77.430401] cloud-init[1974]:  e3e60763add3 Extracting [===============================>                   ]  44.01MB/70.46MB
+
+[   77.432694] cloud-init[1974]:  5b4a39de381d Extracting [===========================>                       ]  103.1MB/184.8MB
+
+[   77.532555] cloud-init[1974]:  5b4a39de381d Extracting [============================>                      ]  106.4MB/184.8MB
+
+[   77.534802] cloud-init[1974]:  e3e60763add3 Extracting [==================================>                ]  49.02MB/70.46MB
+
+[   77.637181] cloud-init[1974]:  e3e60763add3 Extracting [======================================>            ]  54.59MB/70.46MB
+
+[   77.640472] cloud-init[1974]:  5b4a39de381d Extracting [==============================>                    ]  111.4MB/184.8MB
+
+[   77.740743] cloud-init[1974]:  5b4a39de381d Extracting [===============================>                   ]  116.4MB/184.8MB
+
+[   77.746178] cloud-init[1974]:  e3e60763add3 Extracting [==========================================>        ]   59.6MB/70.46MB
+
+[   77.843982] cloud-init[1974]:  5b4a39de381d Extracting [================================>                  ]  121.4MB/184.8MB
+
+[   77.854190] cloud-init[1974]:  e3e60763add3 Extracting [=============================================>     ]  64.62MB/70.46MB
+
+[   77.963649] cloud-init[1974]:  5b4a39de381d Extracting [=================================>                 ]  125.3MB/184.8MB
+
+[   77.991244] cloud-init[1974]:  e3e60763add3 Extracting [=================================================> ]  69.07MB/70.46MB
+
+[   78.064007] cloud-init[1974]:  5b4a39de381d Extracting [===================================>               ]  129.8MB/184.8MB
+
+[   78.154240] cloud-init[1974]:  e3e60763add3 Extracting [=================================================> ]  70.19MB/70.46MB
+
+[   78.165025] cloud-init[1974]:  5b4a39de381d Extracting [====================================>              ]  134.3MB/184.8MB
+
+[   78.244145] cloud-init[1974]:  e3e60763add3 Extracting [==================================================>]  70.46MB/70.46MB
+
+[   78.268819] cloud-init[1974]:  5b4a39de381d Extracting [=====================================>             ]  139.3MB/184.8MB
+
+[   78.283962] cloud-init[1974]:  e3e60763add3 Pull complete
+
+[   78.292860] cloud-init[1974]:  5b801831dd96 Extracting [==================================================>]     636B/636B
+
+[   78.295762] cloud-init[1974]:  5b801831dd96 Extracting [==================================================>]     636B/636B
+
+[   78.323127] cloud-init[1974]:  5b801831dd96 Pull complete
+
+[   78.332768] cloud-init[1974]:  9fa05948455e Extracting [==================================================>]  4.024kB/4.024kB
+
+[   78.335407] cloud-init[1974]:  9fa05948455e Extracting [==================================================>]  4.024kB/4.024kB
+
+[   78.361723] cloud-init[1974]:  9fa05948455e Pull complete
+
+[   78.371966] cloud-init[1974]:  d70e68dbd61c Extracting [==================================================>]   1.48kB/1.48kB
+
+[   78.374361] cloud-init[1974]:  d70e68dbd61c Extracting [==================================================>]   1.48kB/1.48kB
+
+[   78.381758] cloud-init[1974]:  5b4a39de381d Extracting [=======================================>           ]  145.9MB/184.8MB
+
+[   78.403801] cloud-init[1974]:  d70e68dbd61c Pull complete
+
+[   78.411039] cloud-init[1974]:  f86ef4240a84 Extracting [==========================>                        ]  32.77kB/62.53kB
+
+[   78.412368] cloud-init[1974]:  f86ef4240a84 Extracting [==================================================>]  62.53kB/62.53kB
+
+[   78.434362] cloud-init[1974]:  f86ef4240a84 Pull complete
+
+[   78.440257] cloud-init[1974]:  259391b25b59 Extracting [==================================================>]     100B/100B
+
+[   78.442560] cloud-init[1974]:  259391b25b59 Extracting [==================================================>]     100B/100B
+
+[   78.471202] cloud-init[1974]:  259391b25b59 Pull complete
+
+[   78.483686] cloud-init[1974]:  f60c291aa4d9 Extracting [==================================================>]     694B/694B
+
+[   78.483860] cloud-init[1974]:  f60c291aa4d9 Extracting [==================================================>]     694B/694B
+
+[   78.487964] cloud-init[1974]:  5b4a39de381d Extracting [========================================>          ]  151.5MB/184.8MB
+
+[   78.507630] cloud-init[1974]:  f60c291aa4d9 Pull complete
+
+[   78.590427] cloud-init[1974]:  5b4a39de381d Extracting [===========================================>       ]  159.3MB/184.8MB
+
+[   78.592773] cloud-init[1974]:  prometheus Pulled
+
+[   78.692374] cloud-init[1974]:  5b4a39de381d Extracting [=============================================>     ]  166.6MB/184.8MB
+
+[   78.795097] cloud-init[1974]:  5b4a39de381d Extracting [===============================================>   ]  174.9MB/184.8MB
+
+[   78.903690] cloud-init[1974]:  5b4a39de381d Extracting [================================================>  ]  180.5MB/184.8MB
+
+[   79.043707] cloud-init[1974]:  5b4a39de381d Extracting [=================================================> ]  182.7MB/184.8MB
+
+[   79.221142] cloud-init[1974]:  5b4a39de381d Extracting [=================================================> ]  183.8MB/184.8MB
+
+[   79.368195] cloud-init[1974]:  5b4a39de381d Extracting [==================================================>]  184.8MB/184.8MB
+
+[   79.396320] cloud-init[1974]:  5b4a39de381d Pull complete
+
+[   79.538005] cloud-init[1974]:  bcb2a7709afa Extracting [>                                                  ]  557.1kB/133.1MB
+
+[   79.789676] cloud-init[1974]:  bcb2a7709afa Extracting [=>                                                 ]  3.342MB/133.1MB
+
+[   80.029153] cloud-init[1974]:  bcb2a7709afa Extracting [=>                                                 ]  3.899MB/133.1MB
+
+[   80.254480] cloud-init[1974]:  bcb2a7709afa Extracting [=>                                                 ]  4.456MB/133.1MB
+
+[   80.471302] cloud-init[1974]:  bcb2a7709afa Extracting [=>                                                 ]  5.014MB/133.1MB
+
+[   80.664269] cloud-init[1974]:  bcb2a7709afa Extracting [==>                                                ]  5.571MB/133.1MB
+
+[   80.899951] cloud-init[1974]:  bcb2a7709afa Extracting [==>                                                ]  6.128MB/133.1MB
+
+[   81.004945] cloud-init[1974]:  bcb2a7709afa Extracting [==>                                                ]  7.242MB/133.1MB
+
+[   81.268516] cloud-init[1974]:  bcb2a7709afa Extracting [==>                                                ]  7.799MB/133.1MB
+
+[   81.506001] cloud-init[1974]:  bcb2a7709afa Extracting [===>                                               ]  8.356MB/133.1MB
+
+[   81.719421] cloud-init[1974]:  bcb2a7709afa Extracting [===>                                               ]  8.913MB/133.1MB
+
+[   81.843798] cloud-init[1974]:  bcb2a7709afa Extracting [===>                                               ]   9.47MB/133.1MB
+
+[   82.105067] cloud-init[1974]:  bcb2a7709afa Extracting [====>                                              ]  12.26MB/133.1MB
+
+[   82.216155] cloud-init[1974]:  bcb2a7709afa Extracting [=====>                                             ]  13.37MB/133.1MB
+
+[   82.419588] cloud-init[1974]:  bcb2a7709afa Extracting [=====>                                             ]  14.48MB/133.1MB
+
+[   82.524397] cloud-init[1974]:  bcb2a7709afa Extracting [=====>                                             ]   15.6MB/133.1MB
+
+[   82.639282] cloud-init[1974]:  bcb2a7709afa Extracting [======>                                            ]  16.71MB/133.1MB
+
+[   82.839944] cloud-init[1974]:  bcb2a7709afa Extracting [======>                                            ]  18.38MB/133.1MB
+
+[   82.957366] cloud-init[1974]:  bcb2a7709afa Extracting [=======>                                           ]  20.61MB/133.1MB
+
+[   83.169103] cloud-init[1974]:  bcb2a7709afa Extracting [========>                                          ]  22.28MB/133.1MB
+
+[   83.309734] cloud-init[1974]:  bcb2a7709afa Extracting [========>                                          ]  22.84MB/133.1MB
+
+[   83.494951] cloud-init[1974]:  bcb2a7709afa Extracting [========>                                          ]   23.4MB/133.1MB
+
+[   83.618291] cloud-init[1974]:  bcb2a7709afa Extracting [=========>                                         ]  25.62MB/133.1MB
+
+[   83.747972] cloud-init[1974]:  bcb2a7709afa Extracting [==========>                                        ]  27.85MB/133.1MB
+
+[   83.865385] cloud-init[1974]:  bcb2a7709afa Extracting [===========>                                       ]  30.08MB/133.1MB
+
+[   83.972795] cloud-init[1974]:  bcb2a7709afa Extracting [===========>                                       ]  31.75MB/133.1MB
+
+[   84.115138] cloud-init[1974]:  bcb2a7709afa Extracting [============>                                      ]  33.98MB/133.1MB
+
+[   84.237853] cloud-init[1974]:  bcb2a7709afa Extracting [=============>                                     ]  36.21MB/133.1MB
+
+[   84.347666] cloud-init[1974]:  bcb2a7709afa Extracting [==============>                                    ]  37.88MB/133.1MB
+
+[   84.474355] cloud-init[1974]:  bcb2a7709afa Extracting [===============>                                   ]  40.11MB/133.1MB
+
+[   84.611695] cloud-init[1974]:  bcb2a7709afa Extracting [===============>                                   ]  42.34MB/133.1MB
+
+[   84.729875] cloud-init[1974]:  bcb2a7709afa Extracting [================>                                  ]  45.12MB/133.1MB
+
+[   84.843545] cloud-init[1974]:  bcb2a7709afa Extracting [=================>                                 ]  47.91MB/133.1MB
+
+[   84.944663] cloud-init[1974]:  bcb2a7709afa Extracting [==================>                                ]  49.58MB/133.1MB
+
+[   85.069080] cloud-init[1974]:  bcb2a7709afa Extracting [===================>                               ]  51.81MB/133.1MB
+
+[   85.178848] cloud-init[1974]:  bcb2a7709afa Extracting [====================>                              ]  53.48MB/133.1MB
+
+[   85.303821] cloud-init[1974]:  bcb2a7709afa Extracting [=====================>                             ]  56.26MB/133.1MB
+
+[   85.419565] cloud-init[1974]:  bcb2a7709afa Extracting [=====================>                             ]  58.49MB/133.1MB
+
+[   85.531084] cloud-init[1974]:  bcb2a7709afa Extracting [=======================>                           ]  61.28MB/133.1MB
+
+[   85.633399] cloud-init[1974]:  bcb2a7709afa Extracting [=======================>                           ]   63.5MB/133.1MB
+
+[   85.756077] cloud-init[1974]:  bcb2a7709afa Extracting [========================>                          ]  66.29MB/133.1MB
+
+[   85.866406] cloud-init[1974]:  bcb2a7709afa Extracting [=========================>                         ]  69.07MB/133.1MB
+
+[   85.974324] cloud-init[1974]:  bcb2a7709afa Extracting [==========================>                        ]  71.86MB/133.1MB
+
+[   86.094114] cloud-init[1974]:  bcb2a7709afa Extracting [============================>                      ]  74.65MB/133.1MB
+
+[   86.201053] cloud-init[1974]:  bcb2a7709afa Extracting [=============================>                     ]  77.43MB/133.1MB
+
+[   86.307472] cloud-init[1974]:  bcb2a7709afa Extracting [==============================>                    ]  80.22MB/133.1MB
+
+[   86.407578] cloud-init[1974]:  bcb2a7709afa Extracting [==============================>                    ]  82.44MB/133.1MB
+
+[   86.511647] cloud-init[1974]:  bcb2a7709afa Extracting [===============================>                   ]  84.67MB/133.1MB
+
+[   86.620695] cloud-init[1974]:  bcb2a7709afa Extracting [================================>                  ]   86.9MB/133.1MB
+
+[   86.727440] cloud-init[1974]:  bcb2a7709afa Extracting [=================================>                 ]  89.69MB/133.1MB
+
+[   86.831432] cloud-init[1974]:  bcb2a7709afa Extracting [==================================>                ]  92.47MB/133.1MB
+
+[   86.935041] cloud-init[1974]:  bcb2a7709afa Extracting [===================================>               ]  95.26MB/133.1MB
+
+[   87.036830] cloud-init[1974]:  bcb2a7709afa Extracting [====================================>              ]  98.04MB/133.1MB
+
+[   87.152510] cloud-init[1974]:  bcb2a7709afa Extracting [=====================================>             ]  100.3MB/133.1MB
+
+[   87.269155] cloud-init[1974]:  bcb2a7709afa Extracting [======================================>            ]  101.9MB/133.1MB
+
+[   87.378744] cloud-init[1974]:  bcb2a7709afa Extracting [======================================>            ]  103.6MB/133.1MB
+
+[   87.479863] cloud-init[1974]:  bcb2a7709afa Extracting [========================================>          ]  107.5MB/133.1MB
+
+[   87.875096] cloud-init[1974]:  bcb2a7709afa Extracting [=========================================>         ]  109.7MB/133.1MB
+
+[   88.000383] cloud-init[1974]:  bcb2a7709afa Extracting [==========================================>        ]  113.1MB/133.1MB
+
+[   88.218776] cloud-init[1974]:  bcb2a7709afa Extracting [==========================================>        ]  113.6MB/133.1MB
+
+[   88.454926] cloud-init[1974]:  bcb2a7709afa Extracting [==========================================>        ]  114.2MB/133.1MB
+
+[   88.583212] cloud-init[1974]:  bcb2a7709afa Extracting [===========================================>       ]  116.4MB/133.1MB
+
+[   88.697586] cloud-init[1974]:  bcb2a7709afa Extracting [============================================>      ]  117.5MB/133.1MB
+
+[   88.807725] cloud-init[1974]:  bcb2a7709afa Extracting [============================================>      ]  118.7MB/133.1MB
+
+[   89.090148] cloud-init[1974]:  bcb2a7709afa Extracting [============================================>      ]  119.2MB/133.1MB
+
+[   89.191778] cloud-init[1974]:  bcb2a7709afa Extracting [=============================================>     ]  120.9MB/133.1MB
+
+[   89.407120] cloud-init[1974]:  bcb2a7709afa Extracting [===============================================>   ]  126.5MB/133.1MB
+
+[   89.690834] cloud-init[1974]:  bcb2a7709afa Extracting [===============================================>   ]    127MB/133.1MB
+
+[   89.811035] cloud-init[1974]:  bcb2a7709afa Extracting [=================================================> ]  130.9MB/133.1MB
+
+[   89.904317] cloud-init[1974]:  bcb2a7709afa Extracting [==================================================>]  133.1MB/133.1MB
+
+[   90.056756] cloud-init[1974]:  bcb2a7709afa Pull complete
+
+[   90.062466] cloud-init[1974]:  9f73c35df60c Extracting [==================================================>]  11.93kB/11.93kB
+
+[   90.064888] cloud-init[1974]:  9f73c35df60c Extracting [==================================================>]  11.93kB/11.93kB
+
+[   90.086602] cloud-init[1974]:  9f73c35df60c Pull complete
+
+[   90.094105] cloud-init[1974]:  d62f64b7b42b Extracting [>                                                  ]  131.1kB/12.5MB
+
+[   90.194414] cloud-init[1974]:  d62f64b7b42b Extracting [=================>                                 ]  4.325MB/12.5MB
+
+[   90.300494] cloud-init[1974]:  d62f64b7b42b Extracting [=============================>                     ]   7.34MB/12.5MB
+
+[   90.402736] cloud-init[1974]:  d62f64b7b42b Extracting [==============================================>    ]  11.67MB/12.5MB
+
+[   90.442639] cloud-init[1974]:  d62f64b7b42b Extracting [==================================================>]   12.5MB/12.5MB
+
+[   90.465980] cloud-init[1974]:  d62f64b7b42b Pull complete
+
+[   90.475700] cloud-init[1974]:  08483b2dbdb1 Extracting [==================================================>]     151B/151B
+
+[   90.475880] cloud-init[1974]:  08483b2dbdb1 Extracting [==================================================>]     151B/151B
+
+[   90.503072] cloud-init[1974]:  08483b2dbdb1 Pull complete
+
+[   90.509795] cloud-init[1974]:  4f4fb700ef54 Extracting [==================================================>]      32B/32B
+
+[   90.512137] cloud-init[1974]:  4f4fb700ef54 Extracting [==================================================>]      32B/32B
+
+[   90.530080] cloud-init[1974]:  4f4fb700ef54 Pull complete
+
+[   90.536454] cloud-init[1974]:  3616d2fa29d1 Extracting [==================================================>]  1.334kB/1.334kB
+
+[   90.538163] cloud-init[1974]:  3616d2fa29d1 Extracting [==================================================>]  1.334kB/1.334kB
+
+[   90.577049] cloud-init[1974]:  3616d2fa29d1 Pull complete
+
+[   90.608005] cloud-init[1974]:  grafana Pulled
+
+[   90.627980] cloud-init[1974]:  Network monitoring_default  Creating
+
+[   90.834190] cloud-init[1974]:  Network monitoring_default  Created
+
+[   90.839235] cloud-init[1974]:  Volume "monitoring_prometheus_data"  Creating
+
+[   90.846724] cloud-init[1974]:  Volume "monitoring_prometheus_data"  Created
+
+[   90.849246] cloud-init[1974]:  Container monitoring-prometheus-1  Creating
+
+[   91.088084] cloud-init[1974]:  Container monitoring-prometheus-1  Created
+
+[   91.090114] cloud-init[1974]:  Container monitoring-grafana-1  Creating
+
+[   91.129700] cloud-init[1974]:  Container monitoring-grafana-1  Created
+
+[   91.139836] cloud-init[1974]:  Container monitoring-prometheus-1  Starting
+
+[   91.164630] br-58fec8a9f7b6: port 1(vethc110c72) entered blocking state
+
+[   91.165433] br-58fec8a9f7b6: port 1(vethc110c72) entered disabled state
+
+[   91.166335] vethc110c72: entered allmulticast mode
+
+[   91.167029] vethc110c72: entered promiscuous mode
+
+[   92.534846] eth0: renamed from veth20976df
+
+[   92.535622] br-58fec8a9f7b6: port 1(vethc110c72) entered blocking state
+
+[   92.536410] br-58fec8a9f7b6: port 1(vethc110c72) entered forwarding state
+
+[   92.599044] cloud-init[1974]:  Container monitoring-prometheus-1  Started
+
+[   92.600375] cloud-init[1974]:  Container monitoring-grafana-1  Starting
+
+[   92.611199] br-58fec8a9f7b6: port 2(vethd0e26db) entered blocking state
+
+[   92.612008] br-58fec8a9f7b6: port 2(vethd0e26db) entered disabled state
+
+[   92.612941] vethd0e26db: entered allmulticast mode
+
+[   92.613596] vethd0e26db: entered promiscuous mode
+
+[   93.004198] eth0: renamed from veth2234ee4
+
+[   93.005567] br-58fec8a9f7b6: port 2(vethd0e26db) entered blocking state
+
+[   93.006378] br-58fec8a9f7b6: port 2(vethd0e26db) entered forwarding state
+
+[   93.059177] cloud-init[1974]:  Container monitoring-grafana-1  Started
+
+ci-info: no authorized SSH keys fingerprints found for user ec2-user.
+
+<14>Apr 21 19:07:07 cloud-init: #############################################################
+
+<14>Apr 21 19:07:07 cloud-init: -----BEGIN SSH HOST KEY FINGERPRINTS-----
+
+<14>Apr 21 19:07:07 cloud-init: 256 SHA256:K3kfdS5+Pq1NDM4iRYVjEfUnXoUvcgxJoVBo9OxxjGA root@ip-10-10-59-55.ec2.internal (ECDSA)
+
+<14>Apr 21 19:07:07 cloud-init: 256 SHA256:xT9Hjfg6gvlxfp1DLtuIHCylaQsfVVjTpZsMpE74iBE root@ip-10-10-59-55.ec2.internal (ED25519)
+
+<14>Apr 21 19:07:07 cloud-init: -----END SSH HOST KEY FINGERPRINTS-----
+
+<14>Apr 21 19:07:07 cloud-init: #############################################################
+
+-----BEGIN SSH HOST KEY KEYS-----
+
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBA66QFS9BP3+sp3BICqKhhLRJMEYw/l/5M5xtyLwl0ZUZg+0YY7Er1UJoU+buBlkuKHj8d+s4ElMwRoLAQbrwSk= root@ip-10-10-59-55.ec2.internal
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILMtT4GVtJ0Fpqo4Nl1+J9Jyv7TseFOylE1FK5iy7vJ6 root@ip-10-10-59-55.ec2.internal
+
+-----END SSH HOST KEY KEYS-----
+
+[   93.872461] cloud-init[1974]: Cloud-init v. 22.2.2 finished at Tue, 21 Apr 2026 19:07:07 +0000. Datasource DataSourceEc2.  Up 93.82 seconds
+
+

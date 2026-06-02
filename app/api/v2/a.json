@@ -1,0 +1,15 @@
+{
+  "cedula": 123456789,
+  "nombre": "Carlos Lopez",
+  "rol": "Administrador",
+  "jsonDirector": {
+    "nombre": "Juan Fernando",
+    "jsonDoctor": {
+      "documento": "123456789",
+      "nombres": "Juliana",
+      "apellidos": "Betancourt",
+      "especialidad": "Pediatria",
+      "durationCitaMinutos": 30
+    }
+  }
+}

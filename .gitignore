@@ -7,3 +7,11 @@ __pycache__/
 .env.testing
 Procfile
 railway.toml
+ip-permissions.json
+revoke-ip-permissions.json
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+# Ignore Terraform environments directory
+terraform/environments/
