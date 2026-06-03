@@ -30,6 +30,43 @@ def get_labor(db: Session, codigo_labor: str):
     return db.query(Labor).filter(Labor.codigo_labor == codigo_labor).first()
 
 
+# Funcion de busqueda con filtros, orden y paginacion (v3)
+_LABOR_ORDER_COLUMNS = {
+    "codigo_labor": Labor.codigo_labor,
+    "nombre": Labor.nombre,
+    "precio": Labor.precio,
+}
+
+
+def search_labores(
+    db: Session,
+    *,
+    nombre: str | None = None,
+    unidad_medida: str | None = None,
+    precio_min: float | None = None,
+    precio_max: float | None = None,
+    order_by: str = "codigo_labor",
+    order_dir: str = "asc",
+    skip: int = 0,
+    limit: int = 50,
+):
+    query = db.query(Labor)
+
+    if nombre:
+        query = query.filter(Labor.nombre.ilike(f"%{nombre}%"))
+    if unidad_medida:
+        query = query.filter(Labor.unidad_medida == unidad_medida)
+    if precio_min is not None:
+        query = query.filter(Labor.precio >= precio_min)
+    if precio_max is not None:
+        query = query.filter(Labor.precio <= precio_max)
+
+    column = _LABOR_ORDER_COLUMNS.get(order_by, Labor.codigo_labor)
+    column = column.desc() if order_dir == "desc" else column.asc()
+
+    return query.order_by(column).offset(skip).limit(limit).all()
+
+
 # Funcion para actualizar una labor usando Patch
 def update_labor(db: Session, codigo_labor: str, labor: LaborUpdate):
     db_labor = db.query(Labor).filter(Labor.codigo_labor == codigo_labor).first()
