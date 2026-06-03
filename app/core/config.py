@@ -6,6 +6,10 @@ class Settings(BaseSettings):
     POSTGRES_DB: str
     DATABASE_URL: str
 
-    model_config = SettingsConfigDict()
+    ENV: str = "development"
+    APP_VERSION: str = "2.0.0"
+    RELEASE_CHANNEL: str = "stable"
+
+    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
 settings = Settings()

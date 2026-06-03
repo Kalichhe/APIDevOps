@@ -14,6 +14,9 @@ from datetime import datetime
 
 
 
+from sqlalchemy import text
+
+from app.core.config import settings
 from app.db.session import engine, Base
 import app.db.base  # importa los modelos para que Base los conozca
 
@@ -100,12 +103,23 @@ async def metrics(
 @app.get("/health", tags=["Monitoring"], description="Health check de la aplicación")
 async def health_check():
     """Verifica el estado de la aplicación y la conexión a BD."""
-    return {
-        "status": "stable",
-        "version": "2.0.0",
-        "database": "connected",
-        "timestamp": datetime.utcnow().isoformat()
+    try:
+        with engine.connect() as conn:
+            conn.execute(text("SELECT 1"))
+        database = "connected"
+    except SQLAlchemyError:
+        database = "disconnected"
+
+    healthy = database == "connected"
+    payload = {
+        "status": "healthy" if healthy else "unhealthy",
+        "version": settings.APP_VERSION,
+        "release_channel": settings.RELEASE_CHANNEL,
+        "environment": settings.ENV,
+        "database": database,
+        "timestamp": datetime.utcnow().isoformat(),
     }
+    return JSONResponse(status_code=200 if healthy else 503, content=payload)
 
 
 app.include_router(api_router_v1, prefix="/api/v1")
