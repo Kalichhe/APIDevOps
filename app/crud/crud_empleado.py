@@ -30,6 +30,37 @@ def get_empleado(db: Session, empleado_cedula: int):
     return db.query(Empleado).filter(Empleado.cedula == empleado_cedula).first()
 
 
+# Funcion de busqueda con filtros, orden y paginacion (v3)
+_EMPLEADO_ORDER_COLUMNS = {
+    "cedula": Empleado.cedula,
+    "nombre": Empleado.nombre,
+    "rol": Empleado.rol,
+}
+
+
+def search_empleados(
+    db: Session,
+    *,
+    nombre: str | None = None,
+    rol: str | None = None,
+    order_by: str = "cedula",
+    order_dir: str = "asc",
+    skip: int = 0,
+    limit: int = 50,
+):
+    query = db.query(Empleado)
+
+    if nombre:
+        query = query.filter(Empleado.nombre.ilike(f"%{nombre}%"))
+    if rol:
+        query = query.filter(Empleado.rol == rol)
+
+    column = _EMPLEADO_ORDER_COLUMNS.get(order_by, Empleado.cedula)
+    column = column.desc() if order_dir == "desc" else column.asc()
+
+    return query.order_by(column).offset(skip).limit(limit).all()
+
+
 # Funcion para actualizar a un empleado usando Patch
 def update_empleado(
     db: Session, empleado_cedula: int, empleado: EmpleadoUpdate, data_json: dict = None
