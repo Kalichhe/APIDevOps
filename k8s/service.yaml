@@ -1,0 +1,11 @@
+apiVersion: v3
+kind: Service
+metadata:
+  name: api-devops-svc
+spec:
+  selector:
+    app: api-devops
+  ports:
+  - port: 80
+    targetPort: 5000
+  type: ClusterIP

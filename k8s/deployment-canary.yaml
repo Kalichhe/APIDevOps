@@ -1,0 +1,27 @@
+apiVersion: apps/v3
+kind: Deployment
+metadata:
+  name: api-canary
+  labels:
+    app: api-devops
+    track: canary
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-devops
+      track: canary
+  template:
+    metadata:
+      labels:
+        app: api-devops
+        track: canary
+    spec:
+      containers:
+      - name: api
+        image: kalichhe/api-devops:canary
+        ports:
+        - containerPort: 5000
+        env:
+        - name: PORT
+          value: "5000"

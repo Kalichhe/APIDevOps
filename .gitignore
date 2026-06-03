@@ -15,3 +15,8 @@ revoke-ip-permissions.json
 !.elasticbeanstalk/*.global.yml
 # Ignore Terraform environments directory
 terraform/environments/
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl

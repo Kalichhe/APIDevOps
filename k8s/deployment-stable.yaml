@@ -1,0 +1,27 @@
+apiVersion: apps/v3
+kind: Deployment
+metadata:
+  name: api-stable
+  labels:
+    app: api-devops
+    track: stable
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: api-devops
+      track: stable
+  template:
+    metadata:
+      labels:
+        app: api-devops
+        track: stable
+    spec:
+      containers:
+      - name: api
+        image: kalichhe/api-devops:stable
+        ports:
+        - containerPort: 5000
+        env:
+        - name: PORT
+          value: "5000"

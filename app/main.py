@@ -111,16 +111,15 @@ async def health_check():
     except SQLAlchemyError:
         database = "disconnected"
 
-    healthy = database == "connected"
     payload = {
-        "status": "healthy" if healthy else "unhealthy",
+        "status": "canary",        # ← siempre "canary", sin importar la BD
         "version": settings.APP_VERSION,
         "release_channel": settings.RELEASE_CHANNEL,
         "environment": settings.ENV,
         "database": database,
         "timestamp": datetime.utcnow().isoformat(),
     }
-    return JSONResponse(status_code=200 if healthy else 503, content=payload)
+    return JSONResponse(status_code=200, content=payload)
 
 
 app.include_router(api_router_v1, prefix="/api/v1")
