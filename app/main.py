@@ -10,6 +10,8 @@ from app.core.monitoring import (
     MetricsMiddleware,
     setup_logging,
 )
+from datetime import datetime
+
 
 
 from app.db.session import engine, Base
@@ -19,7 +21,7 @@ import app.db.base  # importa los modelos para que Base los conozca
 setup_logging()
 
 app = FastAPI(
-    version="1.0.0",
+    version="2.0.0",
     title="APIDevOps",
     description="API REST con monitoreo y observabilidad",
 )
@@ -99,9 +101,10 @@ async def metrics(
 async def health_check():
     """Verifica el estado de la aplicación y la conexión a BD."""
     return {
-        "status": "healthy",
-        "version": "1.0.0",
+        "status": "stable",
+        "version": "2.0.0",
         "database": "connected",
+        "timestamp": datetime.utcnow().isoformat()
     }
 
 
