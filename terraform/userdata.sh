@@ -34,18 +34,12 @@ services:
     ports:
       - "5000:5000"
     restart: always
+    mem_limit: 200m
+    memswap_limit: 200m
     labels:
       - "track=stable"
 
-  api-canary:
-    image: ${docker_image_canary}
-    environment:
-      - PORT=5001
-    ports:
-      - "5001:5000"
-    restart: always
-    labels:
-      - "track=canary"
+  # Canary removed to avoid pushing canary image
 
   nginx:
     image: nginx:alpine
@@ -55,8 +49,9 @@ services:
       - /home/ubuntu/app/nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on:
       - api-stable
-      - api-canary
     restart: always
+    mem_limit: 200m
+    memswap_limit: 200m
 COMPOSE
 
 # ── 4. Crear nginx.conf con distribución 75% stable / 25% canary ──
@@ -67,8 +62,7 @@ events {
 
 http {
     upstream api_backend {
-        server api-stable:5000 weight=3;   # 75% del tráfico
-        server api-canary:5000  weight=1;  # 25% del tráfico
+      server api-stable:5000;   # Solo stable
     }
 
     server {

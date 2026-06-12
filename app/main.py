@@ -14,7 +14,6 @@ from app.core.monitoring import (
 from datetime import datetime
 
 
-
 from sqlalchemy import text
 
 from app.core.config import settings
@@ -112,7 +111,7 @@ async def health_check():
         database = "disconnected"
 
     payload = {
-        "status": "canary",        # ← siempre "canary", sin importar la BD
+        "status": "canary",  # ← siempre "canary", sin importar la BD
         "version": settings.APP_VERSION,
         "release_channel": settings.RELEASE_CHANNEL,
         "environment": settings.ENV,
@@ -120,6 +119,74 @@ async def health_check():
         "timestamp": datetime.utcnow().isoformat(),
     }
     return JSONResponse(status_code=200, content=payload)
+
+
+# ── Ingeniería del Caos: OOM Kill ──────────────────────────────
+import gc
+import psutil
+import sys
+
+_chaos_memory_store = []
+_CHAOS_MEMORY_LIMIT_MB = 200
+
+
+@app.get("/chaos/acumular-memoria", tags=["Chaos Engineering"])
+async def chaos_acumular_memoria(mb: int = 50):
+    """Acumula MB en RAM, pero libera memoria si se supera el límite."""
+    proceso = psutil.Process()
+    usado_mb = proceso.memory_info().rss / (1024 * 1024)
+
+    if usado_mb + mb > _CHAOS_MEMORY_LIMIT_MB:
+        _chaos_memory_store.clear()
+        gc.collect()
+        usado_tras_limpieza = psutil.Process().memory_info().rss / (1024 * 1024)
+        raise HTTPException(
+            status_code=429,
+            detail={
+                "error": "Límite alcanzado — memoria liberada automáticamente",
+                "memoria_antes_MB": round(usado_mb, 2),
+                "limite_MB": _CHAOS_MEMORY_LIMIT_MB,
+                "memoria_tras_limpieza_MB": round(usado_tras_limpieza, 2),
+            },
+        )
+
+    _chaos_memory_store.append(" " * (mb * 1024 * 1024))
+    return {
+        "memoria_usada_MB": round(
+            psutil.Process().memory_info().rss / (1024 * 1024), 2
+        ),
+        "chunks_almacenados": len(_chaos_memory_store),
+        "limite_MB": _CHAOS_MEMORY_LIMIT_MB,
+    }
+
+
+@app.get("/chaos/estado-memoria", tags=["Chaos Engineering"])
+async def chaos_estado_memoria():
+    usado_mb = psutil.Process().memory_info().rss / (1024 * 1024)
+
+    # Calcula el tamaño real de lo acumulado en el store
+    store_size_bytes = sum(sys.getsizeof(item) for item in _chaos_memory_store)
+    store_size_mb = store_size_bytes / (1024 * 1024)
+
+    return {
+        "memoria_total_proceso_MB": round(usado_mb, 2),
+        "memoria_almacenada_en_store_MB": round(store_size_mb, 2),
+        "chunks_almacenados": len(_chaos_memory_store),
+        "limite_interno_MB": _CHAOS_MEMORY_LIMIT_MB,
+    }
+
+
+@app.delete("/chaos/liberar-memoria", tags=["Chaos Engineering"])
+async def chaos_liberar_memoria():
+    antes = psutil.Process().memory_info().rss / (1024 * 1024)
+    _chaos_memory_store.clear()
+    gc.collect()
+    despues = psutil.Process().memory_info().rss / (1024 * 1024)
+    return {
+        "memoria_antes_MB": round(antes, 2),
+        "memoria_despues_MB": round(despues, 2),
+        "liberado_MB": round(antes - despues, 2),
+    }
 
 
 app.include_router(api_router_v1, prefix="/api/v1")
